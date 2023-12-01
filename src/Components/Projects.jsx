@@ -20,14 +20,9 @@ export const Projects = (props) => {
                             System in Backend.
                         </p>
                         <div className="tools">
-                            <h2>Tool Used</h2>
-                            <div className="tools-span">
-                                <span>React.js</span>
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>MongoDB</span>
-                                <span>Tailwind</span>
-                            </div>
+                           <button className="btn btn-primary">
+                            Read More
+                           </button>
                         </div>
                     </div>
                 </div>
@@ -40,12 +35,9 @@ export const Projects = (props) => {
                             of any country.
                         </p>
                         <div className="tools">
-                            <h2>Tool Used</h2>
-                            <div className="tools-span">
-                                <span>JavaScript</span>
-                                <span>Rapid Api</span>
-                                <span>Tailwind</span>
-                            </div>
+                           <button className="btn btn-primary">
+                            Read More
+                           </button>
                         </div>
                     </div>
                 </div>
@@ -57,14 +49,9 @@ export const Projects = (props) => {
                             of his details and present it to any other Organization
                         </p>
                         <div className="tools">
-                            <h2>Tool Used</h2>
-                            <div className="tools-span">
-                                <span>React.js</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
-                                <span>Bootsrap</span>
-                                <span>Express.js</span>
-                            </div>
+                           <button className="btn btn-primary">
+                            Read More
+                           </button>
                         </div>
                     </div>
                 </div>
