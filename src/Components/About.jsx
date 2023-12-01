@@ -18,7 +18,7 @@ export const About = (props) => {
                 <div className="about-content">
                     <div className="left-about">
                         <div className="skills">
-                            <h4 style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Skills</h4>
+                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Skills</h4>
                             <div className="skills-icons">
                                 <i class="fa-brands fa-js" style={{ color: props.mode === 'light' ? '' : 'white' }} ></i>
                                 <i class="fa-brands fa-react" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
@@ -31,7 +31,7 @@ export const About = (props) => {
                                     <i class="fa-brands fa-github" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                                     <i class="fa-solid fa-cloud" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                                 </div>
-                                <div className='my-2'>
+                                <div className='skills-para my-2'>
                                     <span className='skills-span' style={{ color: props.mode === 'light' ? '' : 'white' }}>These are my Top Skills
                                         <div className='my-2' style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                             For my Further Skills you can visit my Linkedin on HomePage </div></span>

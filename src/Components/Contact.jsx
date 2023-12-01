@@ -35,7 +35,7 @@ export const Contact = (props) => {
             <div className="names">
               <span>Email:</span> <p className='info-m'>pc16777.syedtalhahussain@gmail.com</p>
               <span>Phone:</span> <p className='info-m'>+97 3193511792</p>
-              <span>Website:</span> <p className='info-m'>In progress</p>
+              <span>Website:</span> <p className='info-m'><a className='link-ref' href="https://syedtalhahussain.vercel.app/">syedtalhahussain.vercel.app</a></p>
             </div>
           </div>
         </div>

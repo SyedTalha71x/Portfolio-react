@@ -91,7 +91,7 @@ html {
   padding: 30px;
 }
 
-.left-about .skills h4 {
+.skills-head {
   font-size: 40px;
   font-family: var(--font2);
   color: navy;
@@ -320,7 +320,10 @@ html {
   font-family: var(--font1);
   cursor: pointer;
 }
-
+.link-ref{
+  text-decoration: none;
+  color: white;
+}
 .form-x {
   margin-top: 1.2rem;
 }
@@ -436,16 +439,44 @@ html {
     display: flex;
     flex-direction: column;
   }
+  .skills-head{
+    font-size: 26px;
+  }
+  .right-about h4{
+    font-size: 26px;
+  }
+  .skills-icons i{
+    font-size: 30px ;
+  }
+  .skills-para span{
+    font-size: 15px;
+  }
+  .right-about p{
+    font-size: 15px;
+  }
   .service{
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
+  .services-container h4{
+    font-size: 27px;
+  }
+  .services-container p{
+    font-size: 15px;
+  }
   .project-content{
     width: 100%;
     text-align: center;
+    padding: 20px;
 
+  }
+  .prj-heading h2{
+    font-size: 27px;
+  }
+  .prj-heading p{
+    font-size: 15px;
   }
   .project-content h2{
     font-size: 23px;
@@ -462,7 +493,7 @@ html {
     text-align: center;
   }
   .tools-span span{
-    font-size: 15px;
+    font-size: 12px;
   }
   .contact-row{
     width: 100%;
@@ -472,6 +503,10 @@ html {
   .copyright{
     width: 100%;
     font-size: 12px;
+  }
+  .link-ref{
+    text-decoration: none;
+    color: white;
   }
 
 
