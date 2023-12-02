@@ -13,10 +13,12 @@ import { Footer } from './Components/Footer'
 function App() {
   const [mode, setmode] = useState('light');
 
+  const [text, settext] = useState('Dark Mode');
+
   const togglemode = () => {
     if (mode === 'light') {
       setmode('dark');
-      document.body.style.transition = '0.6s ease-in-out';
+      document.body.style.transition = '0.3s ease-in-out';
       document.body.style.backgroundColor = 'black';
     }
     else {
@@ -25,6 +27,8 @@ function App() {
       document.body.style.backgroundColor = 'white';
     }
   }
+
+
   return (
     <>
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />

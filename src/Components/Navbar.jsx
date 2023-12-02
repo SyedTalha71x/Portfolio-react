@@ -27,7 +27,7 @@ export const Navbar = (props) => {
                         </li>
 
                     </ul>
-                    <button type="button" className="btn btn-primary" onClick={props.togglemode}>See Magic</button>
+                    <button type="button" className="btn btn-primary" onClick={props.togglemode}>Dark Mode</button>
                 </div>
             </div>
         </nav>

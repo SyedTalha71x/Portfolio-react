@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = (props) => {
   return (
-    <div className="main-contact-container" style={{boxShadow: props.mode === 'light'?'':'3px 3px 30px wheat'}}>
+    <div className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
       <div className="contact-row">
         <div className="left-contact">
           <form action="" id='contact'>
@@ -29,13 +29,12 @@ export const Contact = (props) => {
           </form>
         </div>
         <div className="right-contact">
-          <div className="contact-info">
-            <h4>Contact Information</h4>
+          <div className="contact-info">   <h4>Contact Information</h4>
             <p>We are open for any suggestion just contact us.</p>
             <div className="names">
-              <span>Email:</span> <p className='info-m'>pc16777.syedtalhahussain@gmail.com</p>
-              <span>Phone:</span> <p className='info-m'>+97 3193511792</p>
-              <span>Website:</span> <p className='info-m'><a className='link-ref' href="https://syedtalhahussain.vercel.app/">syedtalhahussain.vercel.app</a></p>
+              <i class="fa-solid fa-envelope"></i>   <span>Email:</span> <p className='info-m'>pc16777.syedtalhahussain@gmail.com</p>
+              <i class="fa-solid fa-phone"></i>   <span>Phone:</span> <p className='info-m'>+97 3193511792</p>
+              <i class="fa-brands fa-webflow"></i> <span>Website:</span> <p className='info-m'><a className='link-ref' href="https://syedtalhahussain.vercel.app/">syedtalhahussain.vercel.app</a></p>
             </div>
           </div>
         </div>

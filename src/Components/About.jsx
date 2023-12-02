@@ -18,7 +18,7 @@ export const About = (props) => {
                 <div className="about-content">
                     <div className="left-about">
                         <div className="skills">
-                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Skills</h4>
+                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Specializations</h4>
                             <div className="skills-icons">
                                 <i class="fa-brands fa-js" style={{ color: props.mode === 'light' ? '' : 'white' }} ></i>
                                 <i class="fa-brands fa-react" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>

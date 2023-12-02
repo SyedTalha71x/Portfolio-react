@@ -217,7 +217,7 @@ html {
 
 /* Projects Css here  */
 .main-project-container {
-  width: 60%;
+  width: 70%;
   margin: auto;
   height: 100%;
   margin-top: 10%;
@@ -249,6 +249,7 @@ html {
   background-color: black;
   margin-bottom: 4%;
   padding: 7px;
+  width: 100%;
   /* box-shadow: 3px 3px 30px darkgrey; */
 }
 
@@ -463,13 +464,14 @@ html {
   }
   .services-container h4{
     font-size: 27px;
+    margin-top: 8rem;
   }
   .services-container p{
     font-size: 15px;
   }
   .project-content{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .prj-heading h2{
     font-size: 27px;
@@ -499,6 +501,9 @@ html {
     display: flex;
     flex-direction: column;
   }
+  .tools button{
+    font-size: 13px;
+  }
   .boxex h2{
     font-size: 20px;
   }
@@ -507,11 +512,29 @@ html {
   }
   .copyright{
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
   }
   .link-ref{
     text-decoration: none;
     color: white;
+  }
+  .contact-info h4{
+    font-size: 16px;
+  }
+  .contact-form h4{
+    font-size: 16px;
+  }
+  .form-group-btn button{
+    font-size: 13px;
+  }
+  .names span{
+    font-size: 15px;
+  }
+  .names p{
+    font-size: 13px;
+  }
+  .contact-info p{
+    font-size: 13px;
   }
 
 
