@@ -1,57 +1,33 @@
 import React from 'react'
+import project1 from '../images/prj1.png'
 
 export const Projects = (props) => {
     return (
-        <div className="main-project-container" id="projects" >
-            <div className="project-main-page" >
-                <div className="prj-heading">
-                    <h2 style={{ color: props.mode === 'light' ? '' : 'white' }}>Projects</h2>
-                    <p style={{ color: props.mode === 'light' ? '' : 'white' }}>Here, are some of my Projects you can see.</p>
-                </div>
-            </div>
+        <section id="projects" className="projects sec-pad ">
+            <div className="main-container ">
+                <h2 className="heading heading-sec heading-sec__mb-bg">
+                    <span className="heading-sec__main">Projects</span>
+                    <span className="heading-sec__sub">
+                        Here you will find some of the personal and clients projects that I
+                        created, Each project containing its own Overview
+                    </span>
+                </h2>
 
-            <div className="project-row"  >
-                <div className="project-content"  style={{ boxShadow: props.mode === 'light'? '':'3px 3px 30px navy' }}  >
-                    <div className="projects" >
-                        <h2>Notebook-App</h2>
-                        <p>I created a Notebook Application from where you can access and
-                            manage all your Notes on Cloud.
-                        </p>
-                        <div className="tools">
-                           <button className="btn btn-primary">
-                            Read More
-                           </button>
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={project1}  className="projects__row-img" loading="lazy" />
                         </div>
-                    </div>
-                </div>
-
-                <div className="project-content" style={{ boxShadow: props.mode === 'light'? '':'3px 3px 30px navy' }}>
-                    <div className="projects">
-                        <h2>Weather - App</h2>
-                        <p>I created a Weather App for managing overall Countries Weathers.
-                        </p>
-                        <div className="tools">
-                           <button className="btn btn-primary">
-                            Read More
-                           </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project-content" style={{ boxShadow: props.mode === 'light'? '':'3px 3px 30px navy' }}>
-                    <div className="projects">
-                        <h2>Portfolio</h2>
-                        <p>I created a personal portfolio Website where a user can manage all
-                            of his details and present it to any other Organization
-                        </p>
-                        <div className="tools">
-                           <button className="btn btn-primary">
-                            Read More
-                           </button>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title">Notebook-App</h3>
+                            <p className="projects__row-content-desc">
+                                A Notebook Application where you can manage all your notes on cloud.
+                            </p>
+                            <a className='btn btn-primary' href='' target='_blank'>More Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

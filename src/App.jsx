@@ -9,7 +9,6 @@ import { Services } from './Components/Services'
 import { Projects } from './Components/Projects'
 import { Contact } from './Components/Contact'
 import { Footer } from './Components/Footer'
-import { PrimaryFooter } from './Components/PrimaryFooter'
 
 function App() {
   const [mode, setmode] = useState('light');
@@ -38,7 +37,6 @@ function App() {
       <Services mode={mode} />
       <Projects mode={mode} />
       <Contact mode={mode} />
-      <PrimaryFooter/>
       <Footer mode={mode} />
     </>
   );

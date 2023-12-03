@@ -216,80 +216,53 @@ html {
 }
 
 /* Projects Css here  */
-.main-project-container {
-  width: 70%;
+.projects {
+  margin-top: 8%;
+}
+
+.main-container {
+  width: 65%;
   margin: auto;
   height: 100%;
-  margin-top: 10%;
 }
 
-.project-main-page {
-  text-align: center;
+.projects__row {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  grid-gap: 3rem;
+  margin-bottom: 8rem;
 }
 
-.project-main-page h2 {
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading-sec__main {
   font-size: 2.8rem;
-  font-family: var(--font2);
   color: navy;
-}
-
-.project-main-page p {
-  font-size: 16px;
-  width: 100%;
-  font-family: var(--font1);
-}
-
-.project-row {
-  margin-top: 7%;
-}
-
-.project-content {
-  /* border: 2px solid whitesmoke; */
-  /* background-color: rgb(46, 43, 43); */
-  background-color: black;
-  margin-bottom: 4%;
-  padding: 7px;
-  width: 100%;
-  /* box-shadow: 3px 3px 30px darkgrey; */
-}
-
-.projects {
-  color: white;
-  padding: 20px;
-  width: 100%;
-}
-
-.projects h2 {
-  font-size: 2.1rem;
   font-family: var(--font2);
 }
 
-.tools {
+.heading-sec__sub {
   width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: light;
 }
 
-.tools h2 {
-  font-size: 1.4rem;
-  font-family: var(--font2);
-  margin-bottom: 2%;
+.projects__content {
+  margin-top: 6rem;
 }
 
-.tools span {
-  margin: 5px;
-  background-color: blanchedalmond;
-  color: black;
-  padding: 7px 18px;
-  border-radius: 7px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.tools span:hover {
-  background-color: rgb(8, 8, 53);
-  color: white;
-  font-weight: bold;
-  border: 2px solid yellow;
+.projects__row-img-cont img {
+  height: 280px;
+  width: 560px;
+  border-bottom: 2px solid black;
 }
 
 /* Contact form css here  */
@@ -409,52 +382,6 @@ html {
   margin-top: 8px;
 }
 
-/* primary footer css  */
-.primary-footer {
-  background-color: #0a0430;
-  height: 100%;
-  width: 100%;
-  padding: 40px;
-}
-
-.footer-content {
-  color: white;
-  /* padding: 30px; */
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column; */
-}
-
-.foot-btn {
-  padding: 5px 23px;
-  border-radius: 6px;
-}
-
-.main-footer-icons {
-  padding: 7%;
-}
-
-.main-footer-icons i {
-  font-size: 26px;
-  margin: 2%;
-  color: white;
-  cursor: pointer;
-
-}
-
-.left-footer h4 {
-  margin-top: 4%;
-  font-size: 30px;
-  font-family: var(--font2);
-}
-
-
-.prime-footer {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 4rem;
-}
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
@@ -534,41 +461,6 @@ html {
     font-size: 15px;
   }
 
-  .project-content {
-    width: 100%;
-    /* text-align: center; */
-  }
-
-  .prj-heading h2 {
-    font-size: 27px;
-  }
-
-  .prj-heading p {
-    font-size: 15px;
-  }
-
-  .project-content h2 {
-    font-size: 23px;
-  }
-
-  .project-content p {
-    font-size: 14px;
-  }
-
-  .tools h2 {
-    font-size: 20px;
-  }
-
-  .tools-span {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tools-span span {
-    font-size: 12px;
-  }
-
   .contact-row {
     width: 100%;
     display: flex;
@@ -621,39 +513,35 @@ html {
     font-size: 13px;
   }
 
-  .prime-footer {
+  .projects__row {
     display: flex;
     flex-direction: column;
   }
-  .footer-content{
+
+  .projects__content {
     text-align: center;
-    
   }
 
-  .footer-content h4 {
-    width: 100%;
-    font-size: 23px;
-  }
-  .footer-content p{
+  .projects__row-img-cont img {
+    height: 100%;
     width: 100%;
   }
 
-
-  .footer-content p {
-    width: 100%;
-    font-size: 14px;
-  }
-  .hr-row{
-    display: none;
+  .heading-sec__main {
+    font-size: 26px;
   }
 
-  .foot-btn {
-    font-size: 13px;
+  .heading-sec__sub {
+    font-size: 15px;
   }
 
-  .main-footer-icons {
-    display: none;
+  .main-container {
+    margin-top: 10%;
   }
-
-
+  .projects__row-content-title{
+    font-size: 19px;
+  }
+  .projects__row-content-desc{
+    font-size: 16px;
+  }
 }
