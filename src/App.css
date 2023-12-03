@@ -414,12 +414,12 @@ html {
   background-color: #0a0430;
   height: 100%;
   width: 100%;
-  padding: 30px;
+  padding: 40px;
 }
 
 .footer-content {
   color: white;
-  padding: 30px;
+  /* padding: 30px; */
   /* display: flex;
   justify-content: center;
   align-content: center;
@@ -443,21 +443,12 @@ html {
 
 }
 
-.hr-row {
-  background-color: rgb(63, 47, 47);
-  height: 2px;
-  width: 90%;
-  margin: auto;
-}
-
 .left-footer h4 {
+  margin-top: 4%;
   font-size: 30px;
   font-family: var(--font2);
 }
 
-.left-footer p {
-  width: 70%;
-}
 
 .prime-footer {
   display: grid;
@@ -635,12 +626,16 @@ html {
     flex-direction: column;
   }
   .footer-content{
-    text-align: left;
+    text-align: center;
+    
   }
 
   .footer-content h4 {
     width: 100%;
     font-size: 23px;
+  }
+  .footer-content p{
+    width: 100%;
   }
 
 

@@ -23,8 +23,8 @@ export const PrimaryFooter = () => {
                 <div className="left-footer">
                     <div className="footer-content">
                         <h4>Syed Talha Hussain</h4>
-                        <p>A focused Web Developer building Frontend and Backend of Websites and Web Applications
-                            that leads to the success of the overall product.
+                        <p>A focused Full Stack Web Developer building Frontend and Backend of Websites and Web Applications
+                            that leads to the success of the overall product.Learning new things in this era.
                         </p>
                         <button className="foot-btn btn-primary" onClick={oncheck}>See info</button>
                     </div>
@@ -38,9 +38,6 @@ export const PrimaryFooter = () => {
 
                     </div>
                 </div>
-
-            </div>
-            <div className="hr-row">
 
             </div>
         </div>
