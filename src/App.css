@@ -262,7 +262,7 @@ html {
 .projects__row-img-cont img {
   height: 280px;
   width: 560px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 /* Contact form css here  */

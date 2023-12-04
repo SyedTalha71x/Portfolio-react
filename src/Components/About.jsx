@@ -13,7 +13,7 @@ export const About = (props) => {
     // }
     
     return (
-        <div className="container" id='abouts' style={{ backgroundColor: props.mode === 'light' ? '' : 'black' , boxShadow: props.mode === 'light'?'':'3px 3px 30px yellow' }}>
+        <div className="container" id='abouts' style={{ backgroundColor: props.mode === 'light' ? '' : 'black' , boxShadow: props.mode === 'light'?'':'4px 4px 30px #8d330f' }}>
             <div className="main-about-page">
                 <div className="about-content">
                     <div className="left-about">
