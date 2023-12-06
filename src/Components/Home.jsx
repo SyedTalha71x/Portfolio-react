@@ -1,11 +1,23 @@
 import React from 'react'
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import { motion, useInView, useAnimation } from "framer-motion"
 
 
 export const Home = (props) => {
 
-    const refOpen = useRef(null);
-    const refClose = useRef(null);
+    const ref = useRef(null);
+
+    const useinview = useInView(ref, { once: true });
+
+    const maincontrols = useAnimation();
+
+    useEffect(() => {
+        if (useinview) {
+            maincontrols.start("visible");
+        }
+    }, [useinview]);
+
+
 
     const ongit = () => {
         window.location.href = "https://github.com/SyedTalha71x";
@@ -23,9 +35,20 @@ export const Home = (props) => {
 
     return (
         <>
-            <header className="main-home-page" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 20px wheat', backgroundColor: props.mode === 'light' ? '' : '#06081d' }}>
+            <header ref={ref}
+                className="main-home-page" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 20px wheat', backgroundColor: props.mode === 'light' ? '' : '#06081d' }}>
                 <div className="home-page">
-                    <div className="home-content">
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0, y: 75 },
+                            visible: { opacity: 1, y: 0 }
+                        }}
+                        initial="hidden"
+                        animate={maincontrols}
+                        transition={{
+                            duration: 0.7, delay: 0.25
+                        }}
+                        className="home-content">
                         <h4>I'm Talha, a Professional Web Developer</h4>
                         <p>I am a passionate Full Stack Web Developer in the Software Industry.
                             Just hire me One time.
@@ -36,7 +59,7 @@ export const Home = (props) => {
                             <i class="fa-brands fa-linkedin" onClick={onlinkdin}></i>
                             <i class="fa-brands fa-facebook" onClick={onfb} ></i>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </header>
         </>

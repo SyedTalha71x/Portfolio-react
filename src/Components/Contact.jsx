@@ -1,13 +1,37 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { motion, useInView, useAnimation } from "framer-motion"
 
 export const Contact = (props) => {
+  const ref = useRef(null);
+
+  const useinview = useInView(ref, { once: true });
+
+  const maincontrols = useAnimation();
+
+  useEffect(() => {
+    if (useinview) {
+      maincontrols.start("visible");
+    }
+  }, [useinview]);
+
   return (
-    <div className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
-      <div className="contact-row">
+    <div ref={ref} className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 }
+        }}
+        initial="hidden"
+        animate={maincontrols}
+        transition={{
+          duration: 0.7, delay: 0.25
+        }}
+        className="contact-row">
         <div className="left-contact">
           <form action="" id='contact'>
-            <div className="contact-form">
-              <h4>Send us a message</h4>
+            <div
+              className="contact-form">
+              <h4>Lets work together?</h4>
               <div className="form-x">
                 <div className="form-group">
                   <input type="text" name='name' placeholder='Name' />
@@ -28,7 +52,9 @@ export const Contact = (props) => {
             </div>
           </form>
         </div>
-        <div className="right-contact">
+        <div
+
+          className="right-contact">
           <div className="contact-info">   <h4>Contact Information</h4>
             <p>We are open for any suggestion just contact us.</p>
             <div className="names">
@@ -38,7 +64,7 @@ export const Contact = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
