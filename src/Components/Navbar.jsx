@@ -2,7 +2,7 @@ import React from 'react'
 export const Navbar = (props) => {
     const { title } = props;
     return (
-        <nav className="nav navbar navbar-expand-lg navbar-dark bg-dark" style={{boxShadow: props.mode === 'light'?'':'3px 3px 20px wheat'}}>
+        <nav className="nav navbar navbar-expand-lg navbar-dark bg-dark" style={{boxShadow: props.mode === 'light'?'':'2px 2px 20px wheat'}}>
             <div className="container-fluid">
                 <a class="navbar-brand nav-title" href="#">{props.title.toUpperCase()}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

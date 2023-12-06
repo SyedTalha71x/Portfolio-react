@@ -1,7 +1,11 @@
 import React from 'react'
+import { useRef } from 'react';
 
 
 export const Home = (props) => {
+
+    const refOpen = useRef(null);
+    const refClose = useRef(null);
 
     const ongit = () => {
         window.location.href = "https://github.com/SyedTalha71x";
@@ -16,9 +20,10 @@ export const Home = (props) => {
     const onfb = () => {
         window.location.href = "https://www.facebook.com/profile.php?id=100087213146279";
     }
+
     return (
         <>
-            <header className="main-home-page" style={{ boxShadow: props.mode === 'light'? '':'3px 3px 30px wheat' , backgroundColor: props.mode === 'light'?'':'#06081d' }}>
+            <header className="main-home-page" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 20px wheat', backgroundColor: props.mode === 'light' ? '' : '#06081d' }}>
                 <div className="home-page">
                     <div className="home-content">
                         <h4>I'm Talha, a Professional Web Developer</h4>
