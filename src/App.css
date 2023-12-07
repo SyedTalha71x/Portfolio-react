@@ -389,10 +389,14 @@ html {
   /* .main-home-page{
     width: 100%;
   } */
+  .nav-title{
+    font-size: 14px;
+  }
   .home-content {
     width: 100%;
     text-align: center;
   }
+
 
   .home-content h4 {
     font-size: 33px;
@@ -523,7 +527,7 @@ html {
   }
 
   .projects__row-img-cont img {
-    height: 100%;
+    height: inherit;
     width: 100%;
   }
 
