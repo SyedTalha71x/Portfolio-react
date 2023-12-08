@@ -1,5 +1,4 @@
-import React, {useEffect, useRef} from 'react'
-import { useNavigate} from 'react-router-dom'
+import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 
 
@@ -20,25 +19,20 @@ export const About = (props) => {
         }
     }, [useinview]);
 
-    // const navigate = useNavigate();
-    // const onHandle = () => {
-    //     navigate("https://www.linkedin.com/in/syed-talha-hussain-93b490253/?originalSubdomain=pk");
-    // }
-
     return (
         <div ref={ref} className="container" id='abouts' style={{ backgroundColor: props.mode === 'light' ? '' : 'black', boxShadow: props.mode === 'light' ? '' : '4px 4px 30px #8d330f' }}>
-            <div className="main-about-page">
-                <motion.div
-                    variants={{
-                        hidden: { opacity: 0, y: 75 },
-                        visible: { opacity: 1, y: 0 }
-                    }}
-                    initial="hidden"
-                    animate={maincontrols}
-                    transition={{
-                        duration: 0.7, delay: 0.25
-                    }}
-                    className="about-content">
+            <motion.div
+                variants={{
+                    hidden: { opacity: 0, y: 75 },
+                    visible: { opacity: 1, y: 0 }
+                }}
+                initial="hidden"
+                animate={maincontrols}
+                transition={{
+                    duration: 0.7, delay: 0.25
+                }}
+                className="main-about-page">
+                <div className="about-content">
                     <div className="left-about">
                         <div className="skills">
                             <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Specializations</h4>
@@ -76,8 +70,8 @@ export const About = (props) => {
                             <button type="button" class="btn btn-primary" onClick={onlinkdin}>Know Me</button>
                         </span>
                     </div>
-                </motion.div>
-            </div>
+                </div>
+            </motion.div>
         </div>
     )
 }

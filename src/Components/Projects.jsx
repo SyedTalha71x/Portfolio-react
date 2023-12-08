@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import project1 from '../images/prj1.png'
 import project2 from '../images/prj2.png'
+import project1edit from '../images/prj1edit.png'
+import project2edit from '../images/prj2edit.png'
 
 export const Projects = (props) => {
     const ref = useRef(null);
@@ -42,9 +44,9 @@ export const Projects = (props) => {
                 </div>
 
                 <div className="projects__content">
-                    <div className="projects__row">
-                        <div className="projects__row-img-cont">
-                            <img src={project1} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                    <div className="projects__row" >
+                        <div className="projects__row-img-cont" >
+                            <img src={project1edit} className="projects__row-img" loading="lazy"  />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Notebook-App</h3>
@@ -59,7 +61,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={project2} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={project2edit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Portfolio-Web</h3>

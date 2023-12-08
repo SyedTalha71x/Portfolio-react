@@ -258,10 +258,13 @@ html {
 .projects__content {
   margin-top: 6rem;
 }
+.projects__row-content{
+  margin-top: 1.5rem;
+}
 
 .projects__row-img-cont img {
-  height: 280px;
-  width: 560px;
+  height: 100%;
+  width: 100%;
   border-bottom: 1px solid black;
 }
 
