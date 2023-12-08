@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Navbar } from './Components/Navbar'
-import { Home } from './Components/Home'
 import { About } from './Components/About'
 import { Services } from './Components/Services'
 import { Projects } from './Components/Projects'
@@ -33,7 +32,7 @@ function App() {
   return (
     <>
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />
-      <Home mode={mode} />
+      {/* <Home mode={mode} /> */}
       <About mode={mode} />
       <Services mode={mode} />
       <Projects mode={mode} />

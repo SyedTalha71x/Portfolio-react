@@ -27,38 +27,51 @@ html {
 }
 
 /* Main Home Page css  */
-.main-home-page {
-  width: 100%;
-  height: 600px;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.home-content h4 {
-  font-size: 50px;
-  width: 100%;
-  font-family: var(--font2);
-}
-
-.home-content p {
-  width: 100%;
-  font-size: 14px;
-  font-family: var(--font1);
-}
-
 .main-icons {
   padding: 6px;
 }
 
 .main-icons i {
-  font-size: 20px;
+  font-size: 23px;
   margin: 5px;
   cursor: pointer;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home-content h2 {
+  font-size: 3.3rem;
+  font-family: var(--font2);
+}
+
+.home-content p {
+  font-family: var(--font1);
+  font-size: 16px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .main-icons i:hover {
@@ -74,7 +87,7 @@ html {
   box-shadow: 3px 3px 30px rgb(167, 128, 204);
   display: flex;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 5%;
 }
 
 .about-content {
@@ -258,7 +271,8 @@ html {
 .projects__content {
   margin-top: 6rem;
 }
-.projects__row-content{
+
+.projects__row-content {
   margin-top: 1.5rem;
 }
 
@@ -326,9 +340,11 @@ html {
   padding: 6px 25px;
   font-size: 14px;
 }
-.link-ref:hover{
+
+.link-ref:hover {
   color: whitesmoke;
 }
+
 .right-contact {
   /* display: flex;
   justify-content: center;
@@ -389,19 +405,22 @@ html {
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
 
-  /* .main-home-page{
-    width: 100%;
-  } */
-  .nav-title{
+  .nav-title {
     font-size: 14px;
   }
-  .home-content {
-    width: 100%;
-    text-align: center;
+
+  video {
+    height: 800px;
   }
 
+  .home-content {
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    bottom: 170px;
+  }
 
-  .home-content h4 {
+  .home-content h2 {
     font-size: 33px;
   }
 
@@ -545,10 +564,12 @@ html {
   .main-container {
     margin-top: 10%;
   }
-  .projects__row-content-title{
+
+  .projects__row-content-title {
     font-size: 19px;
   }
-  .projects__row-content-desc{
+
+  .projects__row-content-desc {
     font-size: 16px;
   }
 }
