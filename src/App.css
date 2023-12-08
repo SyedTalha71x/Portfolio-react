@@ -408,18 +408,20 @@ video {
   .nav-title {
     font-size: 14px;
   }
-  .overlay{
+
+  video {
+    height: 100%;
+  }
+
+  .overlay {
     height: 100%;
     width: 100%;
   }
 
   .home-content {
+    height: 100%;
     width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .home-content h2 {
