@@ -27,56 +27,48 @@ html {
 }
 
 /* Main Home Page css  */
-.main-icons {
-  padding: 6px;
-}
-
-.main-icons i {
-  font-size: 23px;
-  margin: 5px;
-  cursor: pointer;
-}
-
 video {
-  height: 100%;
   width: 100%;
+  height: 90vh;
   object-fit: cover;
 }
 
 .home-content {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  cursor: pointer;
 }
 
-.home-content h2 {
-  font-size: 3.3rem;
+.heading h2 {
+  font-size: 3.4rem;
   font-family: var(--font2);
 }
 
 .home-content p {
+  font-size: 17px;
   font-family: var(--font1);
-  font-size: 16px;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
+  height: 90vh;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, .5);
 }
 
-.main-icons i:hover {
-  color: wheat
+.main-icons i {
+  margin: 3px;
+  font-size: 23px;
 }
+
 
 /* About Us Page css  */
 .container {
@@ -409,15 +401,6 @@ video {
     font-size: 14px;
   }
 
-  video {
-    height: 100%;
-  }
-
-  .overlay {
-    height: 100%;
-    width: 100%;
-  }
-
   .home-content {
     height: 100%;
     width: 100%;
@@ -426,6 +409,7 @@ video {
 
   .home-content h2 {
     font-size: 33px;
+    width: 100%;
   }
 
   .home-content p {
