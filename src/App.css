@@ -393,6 +393,26 @@ video {
   margin-top: 8px;
 }
 
+@media screen and (max-width:600px) {
+  video {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .home {
+    background-color: #0b031a;
+    height: 90vh;
+  }
+  .heading span{
+    color: #9d9ac9;
+    font-weight: bolder;
+  }
+ 
+}
+
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
@@ -405,20 +425,35 @@ video {
     height: 100%;
     width: 100%;
     text-align: center;
+    padding: 10px;
+  }
+  .home-content::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    background-color: #9b96dc;
+    width: 20%;
+    margin: auto;
+
   }
 
   .home-content h2 {
-    font-size: 33px;
+    font-size: 38px;
     width: 100%;
   }
 
   .home-content p {
     font-size: 13px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 
   .main-icons i {
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 
   .container {

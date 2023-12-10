@@ -60,7 +60,7 @@ export const Contact = (props) => {
             <div className="names">
               <i class="fa-solid fa-envelope"></i>   <span>Email:</span> <p className='info-m'>pc16777.syedtalhahussain@gmail.com</p>
               <i class="fa-solid fa-phone"></i>   <span>Phone:</span> <p className='info-m'>+97 3193511792</p>
-              <i class="fa-brands fa-webflow"></i> <span>Website:</span> <p className='info-m'><a className='link-ref' href="https://syedtalhahussain.vercel.app/">syedtalhahussain.vercel.app</a></p>
+              <i class="fa-brands fa-webflow"></i> <span>Website:</span> <p className='info-m'><a className='link-ref' href="https://syedtalhahussain.com">www.syedtalhahussain.com</a></p>
             </div>
           </div>
         </div>

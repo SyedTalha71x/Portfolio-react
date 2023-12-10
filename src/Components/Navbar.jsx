@@ -20,7 +20,7 @@ export const Navbar = (props) => {
         <>
             <video src={video1} autoPlay loop muted></video>
             <div className="overlay"></div>
-            <nav className="nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 20px wheat' }}>
+            <nav className="nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand nav-title" href="#"> <span>  {props.title.toUpperCase()}  </span>  </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +50,18 @@ export const Navbar = (props) => {
                 </div>
             </nav>
 
-            <div className="home-content">
-                <div className="heading">
-                    <h2>I'm, Talha a Professional Web Developer</h2>
-                    <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
-                    <div className="main-icons">
-                        <i class="fa-brands fa-facebook" onClick={onfb}></i>
-                        <i class="fa-brands fa-github" onClick={ongit}></i>
-                        <i class="fa-brands fa-instagram" onClick={oninsta}></i>
-                        <i class="fa-brands fa-linkedin" onClick={onlinkdin}></i>
+            <div className="home">
+
+                <div className="home-content">
+                    <div className="heading">
+                        <h2>I'm, <span>Talha</span> a Professional Web Developer</h2>
+                        <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
+                        <div className="main-icons">
+                            <i class="fa-brands fa-facebook" onClick={onfb}></i>
+                            <i class="fa-brands fa-github" onClick={ongit}></i>
+                            <i class="fa-brands fa-instagram" onClick={oninsta}></i>
+                            <i class="fa-brands fa-linkedin" onClick={onlinkdin}></i>
+                        </div>
                     </div>
                 </div>
             </div>
