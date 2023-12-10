@@ -406,11 +406,25 @@ video {
     background-color: #0b031a;
     height: 90vh;
   }
-  .heading span{
+
+  .heading span {
     color: #9d9ac9;
     font-weight: bolder;
   }
- 
+
+  .home-content::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    background-color: #9b96dc;
+    width: 20%;
+    margin: auto;
+
+  }
+
 }
 
 
@@ -425,23 +439,11 @@ video {
     height: 100%;
     width: 100%;
     text-align: center;
-    padding: 10px;
   }
-  .home-content::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 68%;
-    transform: translate(-50%, -50%);
-    height: 2px;
-    background-color: #9b96dc;
-    width: 20%;
-    margin: auto;
 
-  }
 
   .home-content h2 {
-    font-size: 38px;
+    font-size: 40px;
     width: 100%;
   }
 
@@ -449,10 +451,11 @@ video {
     font-size: 13px;
     width: 80%;
     margin: auto;
+    margin-top: 2%;
   }
 
   .main-icons i {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 20px;
   }
 
