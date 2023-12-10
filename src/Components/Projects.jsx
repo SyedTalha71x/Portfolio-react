@@ -1,11 +1,15 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import project1 from '../images/prj1.png'
 import project2 from '../images/prj2.png'
 import project1edit from '../images/prj1edit.png'
 import project2edit from '../images/prj2edit.png'
+import { Project1 } from '../Projects/Project1'
+import { Project2 } from '../Projects/Project2'
+
 
 export const Projects = (props) => {
+
     const ref = useRef(null);
 
     const useinview = useInView(ref, { once: true });
@@ -46,14 +50,17 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row" >
                         <div className="projects__row-img-cont" >
-                            <img src={project1edit} className="projects__row-img" loading="lazy"  />
+                            <img src={project1edit} className="projects__row-img" loading="lazy" />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Notebook-App</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
-                            <a className='btn btn-primary' href='' target='_blank'>More Info</a>
+           
+                                <button className='btn btn-primary'>More Info</button>
+
+             
                         </div>
                     </div>
                 </div>
@@ -68,7 +75,7 @@ export const Projects = (props) => {
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                 A Portfolio Website for Business Usage and others.
                             </p>
-                            <a className='btn btn-primary' href='' target='_blank'>More Info</a>
+                            <button className='btn btn-primary'>More Info</button>
                         </div>
                     </div>
                 </div>

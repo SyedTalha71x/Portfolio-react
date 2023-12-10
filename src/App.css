@@ -44,7 +44,9 @@ video {
   color: white;
   cursor: pointer;
 }
-
+.heading-home{
+  text-align: center;
+}
 .heading-home h2 {
   font-size: 3.4rem;
   font-family: var(--font2);
