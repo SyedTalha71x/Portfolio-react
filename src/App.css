@@ -440,6 +440,9 @@ video {
     width: 100%;
     text-align: center;
   }
+  .form-group-btn button{
+    font-size: 12px;
+  }
 
 
   .home-content h2 {

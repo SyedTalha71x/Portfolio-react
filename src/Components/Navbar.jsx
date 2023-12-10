@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import video1 from '../assets/bgvideo.mp4'
+import { motion, useInView, useAnimation } from "framer-motion"
 
 export const Navbar = (props) => {
+
+    const ref = useRef(null);
+
+    const useinview = useInView(ref, { once: true });
+
+    const maincontrols = useAnimation();
+
+    useEffect(() => {
+        if (useinview) {
+            maincontrols.start("visible");
+        }
+    }, [useinview]);
+
     const ongit = () => {
         window.location.href = "https://github.com/SyedTalha71x";
     }
@@ -50,7 +64,8 @@ export const Navbar = (props) => {
                 </div>
             </nav>
 
-            <div className="home">
+            <div
+                className="home">
 
                 <div className="home-content">
                     <div className="heading">
