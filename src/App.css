@@ -45,7 +45,7 @@ video {
   cursor: pointer;
 }
 
-.heading h2 {
+.heading-home h2 {
   font-size: 3.4rem;
   font-family: var(--font2);
 }
@@ -407,7 +407,7 @@ video {
     height: 90vh;
   }
 
-  .heading span {
+  .heading-home span {
     color: #9d9ac9;
     font-weight: bolder;
   }

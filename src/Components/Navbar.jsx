@@ -68,7 +68,7 @@ export const Navbar = (props) => {
                 className="home">
 
                 <div className="home-content">
-                    <div className="heading">
+                    <div className="heading-home">
                         <h2>I'm, <span>Talha</span> a Professional Web Developer</h2>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
                         <div className="main-icons">
