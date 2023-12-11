@@ -46,7 +46,7 @@ export const Services = (props) => {
                         <div className="image-box">
                             <i class="fa-brands fa-creative-commons-nd" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                         </div>
-                        <h2 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Web Design</h2>
+                        <h1 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Web Design</h1>
                         <p style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>I will provide you the best and creative Web Designs.
                             Your Satisfaction is my Success. So, i am waiting for my clients
                             Thank you</p>
@@ -65,7 +65,7 @@ export const Services = (props) => {
                         <div className="image-box">
                             <i class="fa-solid fa-user-pen" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                         </div>
-                        <h2 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Web Development</h2>
+                        <h1 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Web Development</h1>
                         <p style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>I will provide you the best and creative Website development with enhance
                             Frontend and Backend. Your Requirements are my first priority.
                         </p>
@@ -84,7 +84,7 @@ export const Services = (props) => {
                         <div className="image-box">
                             <i class="fa-solid fa-laptop-file" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                         </div>
-                        <h2 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Responsive Designs</h2>
+                        <h1 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Responsive Designs</h1>
                         <p style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>I will provide you the Fully Responsive Designs which you can be access in any
                             Device according to your Requirements. Just Hire me One time!
                         </p>
