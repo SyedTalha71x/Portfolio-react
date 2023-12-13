@@ -37,21 +37,29 @@ export const About = (props) => {
                         <div className="skills">
                             <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Specializations</h4>
                             <div className="skills-icons">
-                                <i class="fa-brands fa-js" style={{ color: props.mode === 'light' ? '' : 'white' }} ></i>
-                                <i class="fa-brands fa-react" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
-                                <i class="fa-brands fa-css3-alt" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
-                                <i class="fa-brands fa-node" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
+                                <div className="gap-1">
+                                    <h4>React.js</h4>
+                                    <h4>Next.js</h4>
+                                    <h4>Node.js</h4>
 
-                                <div className='gap'>
-                                    <i class="fa-solid fa-database" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
-                                    <i class="fa-brands fa-git" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
-                                    <i class="fa-brands fa-github" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
-                                    <i class="fa-solid fa-cloud" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                                 </div>
-                                <div className='skills-para my-2'>
-                                    <span className='skills-span' style={{ color: props.mode === 'light' ? '' : 'white' }}>These are my Top Skills
-                                        <div className='my-2' style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                            For my Further Skills you can visit my Linkedin on HomePage </div></span>
+                                <div className='gap'>
+                                    <h4>SQL</h4>
+                                    <h4>Git</h4>
+                                    <h4>Github</h4>
+
+                                </div>
+                                <div className='gap'>
+                                    <h4>Responsiveness</h4>
+                                    <h4>HTML</h4>
+                                    <h4>CSS</h4>
+
+                                </div>
+                                <div className='gap'>
+                                    <h4>Javascript</h4>
+                                    <h4>Tailwind</h4>
+                                    <h4>C#</h4>
+
                                 </div>
                             </div>
                         </div>

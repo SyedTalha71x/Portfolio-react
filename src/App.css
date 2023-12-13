@@ -44,9 +44,11 @@ video {
   color: white;
   cursor: pointer;
 }
-.heading-home{
+
+.heading-home {
   text-align: center;
 }
+
 .heading-home h2 {
   font-size: 3.4rem;
   font-family: var(--font2);
@@ -92,10 +94,11 @@ video {
 
 .main-about-page {
   margin-top: 50px;
+  width: 100%;
 }
 
 .left-about {
-  padding: 30px;
+  padding: 20px;
 }
 
 .skills-head {
@@ -104,20 +107,36 @@ video {
   color: navy;
 }
 
-.skills-icons {
+.skills-icons .gap-1 {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+
 }
 
-.skills-icons i {
-  font-size: 55px;
-  /* margin-right: 30px; */
-  padding: 7px;
-
+.skills-icons .gap-1 h4 {
+  background-color: rgb(233, 229, 222);
+  margin-left: 2%;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: var(--font1);
 }
 
 .gap {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.gap h4 {
+  background-color: rgb(233, 229, 222);
+  margin-left: 2%;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: var(--font1);
 }
 
 .skills-span {
@@ -442,7 +461,8 @@ video {
     width: 100%;
     text-align: center;
   }
-  .form-group-btn button{
+
+  .form-group-btn button {
     font-size: 12px;
   }
 
@@ -486,16 +506,27 @@ video {
     font-size: 26px;
   }
 
+  .skills-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills-icons .gap-1 h4 {
+    font-size: 14px;
+
+  }
+
+  .skills-icons .gap h4 {
+    font-size: 14px;
+    width: 100%;
+
+  }
+
   .right-about h4 {
     font-size: 26px;
-  }
-
-  .skills-icons i {
-    font-size: 30px;
-  }
-
-  .skills-para span {
-    font-size: 15px;
   }
 
   .right-about p {
