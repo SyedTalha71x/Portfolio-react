@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import project1edit from '../images/prj1edit.png'
 import project2edit from '../images/prj2edit.png'
-import project1 from '../Components/Project1'
-import project2 from '../Components/Project2'
+
 
 
 
@@ -57,10 +56,11 @@ export const Projects = (props) => {
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
-           
+                            <div>
                                 <button className='btn btn-primary'>More Info</button>
+                       
+                            </div>
 
-             
                         </div>
                     </div>
                 </div>

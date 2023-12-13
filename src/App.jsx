@@ -9,7 +9,6 @@ import { Projects } from './Components/Projects'
 import { Contact } from './Components/Contact'
 import { Footer } from './Components/Footer'
 
-
 function App() {
   const [mode, setmode] = useState('light');
 
@@ -31,13 +30,15 @@ function App() {
 
   return (
     <>
+
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />
-      {/* <Home mode={mode} /> */}
       <About mode={mode} />
       <Services mode={mode} />
       <Projects mode={mode} />
       <Contact mode={mode} />
       <Footer mode={mode} />
+
+
     </>
   );
 }
