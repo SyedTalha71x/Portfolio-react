@@ -2,12 +2,26 @@ import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import project1edit from '../images/prj1edit.png'
 import project2edit from '../images/prj2edit.png'
+import { ProjectModal1 } from './ProjectModal1'
+import { ProjectModal2 } from './ProjectModal2'
 
 
 
 
 
 export const Projects = (props) => {
+
+    const [showModal1, setShowModal1] = useState(false);
+
+    const handleOnClose = () => {
+        setShowModal1(false);
+    }
+
+    const [showModal2, setShowModal2] = useState(false);
+
+    const handleOnClose1 = () => {
+        setShowModal2(false);
+    }
 
     const ref = useRef(null);
 
@@ -57,10 +71,11 @@ export const Projects = (props) => {
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
                             <div>
-                                <button className='btn btn-primary'>More Info</button>
-                       
+                                <button onClick={() => setShowModal1(true)} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    More Info
+                                </button>
+                                <ProjectModal1 onClose={handleOnClose} visible={showModal1} />
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -75,7 +90,12 @@ export const Projects = (props) => {
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                 A Portfolio Website for Business Usage and others.
                             </p>
-                            <button className='btn btn-primary'>More Info</button>
+                            <div>
+                                <button onClick={() => setShowModal2(true)} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    More Info
+                                </button>
+                                <ProjectModal2 onClose={handleOnClose1} visible={showModal2} />
+                            </div>
                         </div>
                     </div>
                 </div>

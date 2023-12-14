@@ -414,6 +414,48 @@ video {
   margin-top: 8px;
 }
 
+
+/* Modal css here  */
+.modal-heading1 h3 {
+  font-family: var(--font2);
+}
+
+.modal-heading1 p {
+  font-size: 16px;
+  font-family: var(--font2);
+}
+
+.para-bullets p {
+  font-size: 15px;
+
+}
+
+.para-bullets p span {
+  font-weight: bolder;
+}
+
+.modaltools-h h3 {
+  font-size: 23px;
+}
+
+.bold-tools {
+  display: flex;
+  align-items: center;
+}
+
+.bold-tools h4 {
+  font-size: 16px;
+  background-color: rgb(232, 231, 217);
+  color: black;
+  padding: 10px;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
 @media screen and (max-width:600px) {
   video {
     display: none;
@@ -451,6 +493,31 @@ video {
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
+
+  .modal-heading1 h3 {
+    font-size: 20px;
+    font-family: var(--font2);
+  }
+  
+  .modal-heading1 p {
+    font-size: 14px;
+    font-family: var(--font2);
+  }
+  .modaltools-h h3 {
+    font-size: 20px;
+  }
+  
+  .bold-tools {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .bold-tools h4 {
+    font-size: 13px;
+    width: 100%;
+  
+  }
 
   .nav-title {
     font-size: 14px;
