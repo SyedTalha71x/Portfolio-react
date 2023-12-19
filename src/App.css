@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Montserrat:wght@700&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -9,11 +11,17 @@ html {
   --font1: 'Poppins', sans-serif;
   --font2: 'Kanit', sans-serif;
   --font3: 'Roboto', sans-serif;
+  --font4: 'Outfit', sans-serif;
+  --font5: 'Montserrat', sans-serif;;
+  ;
 }
 
 /* Navigation Css  */
 .nav_items {
   margin-left: 10px;
+}
+.nav{
+  background-color: #02041d;
 }
 
 .nav-item a:hover {
@@ -50,8 +58,8 @@ video {
 }
 
 .heading-home h2 {
-  font-size: 3.4rem;
-  font-family: var(--font2);
+  font-size: 3rem;
+  font-family: var(--font5);
 }
 
 .home-content p {
@@ -119,7 +127,7 @@ video {
   margin-left: 2%;
   font-size: 15px;
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-family: var(--font1);
 }
 
@@ -352,7 +360,13 @@ video {
 .btn {
   padding: 6px 25px;
   font-size: 14px;
+  background-color: #560979;
 }
+
+.btn:hover {
+  background-color: #020024;
+}
+
 
 .link-ref:hover {
   color: whitesmoke;
@@ -498,29 +512,34 @@ video {
     font-size: 20px;
     font-family: var(--font2);
   }
-  
+
   .modal-heading1 p {
     font-size: 14px;
     font-family: var(--font2);
   }
+
   .modaltools-h h3 {
     font-size: 20px;
   }
-  
+
   .bold-tools {
     display: flex;
     align-items: center;
     width: 100%;
   }
-  
+
   .bold-tools h4 {
     font-size: 13px;
     width: 100%;
-  
+
   }
 
   .nav-title {
     font-size: 14px;
+
+  }
+  .nav-item a{
+    font-family: var(--font4);
   }
 
   .home-content {

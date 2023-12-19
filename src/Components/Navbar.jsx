@@ -34,7 +34,7 @@ export const Navbar = (props) => {
         <>
             <video src={video1} autoPlay loop muted></video>
             <div className="overlay"></div>
-            <nav className="nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav className="nav navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand nav-title" href="#"> <span>  {props.title.toUpperCase()}  </span>  </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@ export const Navbar = (props) => {
 
                 <div className="home-content">
                     <div className="heading-home">
-                        <h2>I'm, <span>Talha</span> a Professional Web Developer</h2>
+                        <h2>I'M, <span>TALHA</span> A PROFESSIONAL WEB DEVELOPER</h2>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
                         <div className="main-icons">
                             <i class="fa-brands fa-facebook" onClick={onfb}></i>

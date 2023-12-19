@@ -18,7 +18,7 @@ function App() {
     if (mode === 'light') {
       setmode('dark');
       document.body.style.transition = '0.3s ease-in-out';
-      document.body.style.backgroundColor = 'black';
+      document.body.style.backgroundColor = '#03010b';
     }
     else {
       setmode('light');
