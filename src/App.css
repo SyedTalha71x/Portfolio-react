@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Montserrat:wght@700&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Montserrat:wght@700&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -12,15 +12,25 @@ html {
   --font2: 'Kanit', sans-serif;
   --font3: 'Roboto', sans-serif;
   --font4: 'Outfit', sans-serif;
-  --font5: 'Montserrat', sans-serif;;
+  --font5: 'Montserrat', sans-serif;
+  ;
   ;
 }
 
 /* Navigation Css  */
+.nav-logo{
+  color: white;
+  margin-right: 10px;
+  font-size: 30px;
+  position: relative;
+  bottom: 2px;
+  font-weight: bolder;
+}
 .nav_items {
   margin-left: 10px;
 }
-.nav{
+
+.nav {
   background-color: #02041d;
 }
 
@@ -538,7 +548,8 @@ video {
     font-size: 14px;
 
   }
-  .nav-item a{
+
+  .nav-item a {
     font-family: var(--font4);
   }
 

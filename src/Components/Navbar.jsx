@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import video1 from '../assets/bgvideo.mp4'
 import { motion, useInView, useAnimation } from "framer-motion"
+import { BsBrowserFirefox } from "react-icons/bs";
 
 export const Navbar = (props) => {
 
@@ -36,6 +37,7 @@ export const Navbar = (props) => {
             <div className="overlay"></div>
             <nav className="nav navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container-fluid">
+                    <BsBrowserFirefox className='nav-logo' />
                     <a className="navbar-brand nav-title" href="#"> <span>  {props.title.toUpperCase()}  </span>  </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
