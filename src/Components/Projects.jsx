@@ -4,6 +4,8 @@ import project1edit from '../images/prj1edit.png'
 import project2edit from '../images/prj2edit.png'
 import { ProjectModal1 } from './ProjectModal1'
 import { ProjectModal2 } from './ProjectModal2'
+import prj1 from '../images/prj1.png'
+import prj2 from '../images/prj2.png'
 
 
 
@@ -11,17 +13,17 @@ import { ProjectModal2 } from './ProjectModal2'
 
 export const Projects = (props) => {
 
-    const [showModal1, setShowModal1] = useState(false);
+    // const [showModal1, setShowModal1] = useState(false);
 
-    const handleOnClose = () => {
-        setShowModal1(false);
-    }
+    // const handleOnClose = () => {
+    //     setShowModal1(false);
+    // }
 
-    const [showModal2, setShowModal2] = useState(false);
+    // const [showModal2, setShowModal2] = useState(false);
 
-    const handleOnClose1 = () => {
-        setShowModal2(false);
-    }
+    // const handleOnClose1 = () => {
+    //     setShowModal2(false);
+    // }
 
     const ref = useRef(null);
 
@@ -63,7 +65,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row" >
                         <div className="projects__row-img-cont" >
-                            <img src={project1edit} className="projects__row-img" loading="lazy" />
+                            <img src={prj1} className="projects__row-img" loading="lazy" />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Notebook-App</h3>
@@ -71,10 +73,9 @@ export const Projects = (props) => {
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
                             <div>
-                                <button onClick={() => setShowModal1(true)} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     More Info
                                 </button>
-                                <ProjectModal1 onClose={handleOnClose} visible={showModal1} />
                             </div>
                         </div>
                     </div>
@@ -83,7 +84,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={project2edit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={prj2} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Portfolio-Web</h3>
@@ -91,10 +92,9 @@ export const Projects = (props) => {
                                 A Portfolio Website for Business Usage and others.
                             </p>
                             <div>
-                                <button onClick={() => setShowModal2(true)} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     More Info
                                 </button>
-                                <ProjectModal2 onClose={handleOnClose1} visible={showModal2} />
                             </div>
                         </div>
                     </div>

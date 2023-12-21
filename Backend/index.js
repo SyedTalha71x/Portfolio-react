@@ -1,18 +1,19 @@
-const connectToMongo = require('./db');
 const express = require('express')
+const connectDB = require('./db');
 const cors = require('cors');
-connectToMongo();
 
 
-const app = express()
-const port = 3001
+
+const app = express();
+connectDB();
+const port = 3005;
 
 app.use(cors())
 app.use(express.json())
 
 
 app.get('/', (req, res) => {
-    res.send('Hello Talha')
+    res.send('Hello syed Talha')
 })
 
 app.listen(port, () => {

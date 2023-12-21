@@ -123,7 +123,7 @@ video {
 }
 
 .skills-icons .gap-1 h4 {
-  background-color: rgb(233, 229, 222);
+  background-color: #dcd1d1;
   margin-left: 2%;
   font-size: 15px;
   padding: 8px 12px;
@@ -139,7 +139,7 @@ video {
 }
 
 .gap h4 {
-  background-color: rgb(233, 229, 222);
+  background-color: #dcd1d1;
   margin-left: 2%;
   font-size: 15px;
   padding: 8px 12px;
@@ -698,6 +698,7 @@ video {
 
   .projects__row-img-cont img {
     height: inherit;
+    /* height: 200px; */
     width: 100%;
   }
 

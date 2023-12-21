@@ -1,14 +1,26 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://localhost:27017/Portfolio"
+function connectDB() {
+    const mongoURI = 'mongodb://127.0.0.1:27017/Portfolio';
 
-const connectToMongo = () => {
-    mongoose.connect(mongoURI)
-        .then(() => {
-            console.log("Connection Successfull");
-        }).catch(() => {
-            console.log("Connection Failed");
-        })
+    try {
+        mongoose.connect(mongoURI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+    } catch (err) {
+        console.error(err.message);
+        process.exit(1);
+    }
+    const dbConnection = mongoose.connection;
+    dbConnection.once("open", (_) => {
+        console.log(`Database connected: ${mongoURI}`);
+    });
+
+    dbConnection.on("error", (err) => {
+        console.error(`connection error: ${err}`);
+    });
+    return;
 }
 
-module.exports = connectToMongo;
+module.exports = connectDB;

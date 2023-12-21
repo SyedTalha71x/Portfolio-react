@@ -20,7 +20,7 @@ export const About = (props) => {
     }, [useinview]);
 
     return (
-        <div ref={ref} className="container" id='abouts' style={{ backgroundColor: props.mode === 'light' ? '' : 'black', boxShadow: props.mode === 'light' ? '' : '4px 4px 30px #8d330f' }}>
+        <div ref={ref} className="container" id='abouts' style={{ backgroundColor: props.mode === 'light' ? '#e9e9e9' : 'black', boxShadow: props.mode === 'light' ? '' : '4px 4px 30px #8d330f' }}>
             <motion.div
                 variants={{
                     hidden: { opacity: 0, y: 75 },
