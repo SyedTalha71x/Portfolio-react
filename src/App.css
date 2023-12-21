@@ -29,6 +29,9 @@ html {
 .nav_items {
   margin-left: 10px;
 }
+.nav_items a{
+  font-family: var(--font4);
+}
 
 .nav {
   background-color: #02041d;
@@ -41,7 +44,7 @@ html {
 }
 
 .nav-title {
-  font-family: var(--font1);
+  font-family: var(--font5);
 }
 
 /* Main Home Page css  */
