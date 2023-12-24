@@ -46,7 +46,7 @@ export const Contact = (props) => {
                   <input type="textarea" name='message' placeholder='Message' />
                 </div>
                 <div className="form-group-btn">
-                  <button className="btn btn-primary">Connect</button>
+                  <button className="connectbtn">Connect</button>
                 </div>
               </div>
             </div>

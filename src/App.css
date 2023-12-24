@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Baloo+Bhaina+2:wght@500&family=Kanit:ital,wght@0,400;0,500;1,200&family=Merriweather+Sans:wght@500&family=Montserrat:wght@700&family=Outfit:wght@700&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,500&display=swap');
+
 
 html {
   scroll-behavior: smooth;
@@ -13,12 +15,13 @@ html {
   --font3: 'Roboto', sans-serif;
   --font4: 'Outfit', sans-serif;
   --font5: 'Montserrat', sans-serif;
+  --font6: 'Montserrat', sans-serif;
   ;
   ;
 }
 
 /* Navigation Css  */
-.nav-logo{
+.nav-logo {
   color: white;
   margin-right: 5px;
   font-size: 30px;
@@ -26,11 +29,17 @@ html {
   bottom: 2px;
   font-weight: bolder;
 }
+
 .nav_items {
   margin-left: 10px;
 }
-.nav_items a{
-  font-family: var(--font4);
+
+.nav_items a {
+  /* font-family: var(--font4); */
+  font-family: var(--font56);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .nav {
@@ -45,6 +54,22 @@ html {
 
 .nav-title {
   font-family: var(--font5);
+}
+
+.navbtn {
+  padding: 5px 13px;
+  background-color: rgb(71, 71, 193);
+  color: white;
+  font-family: var(--font6);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.navbtn:hover {
+  background-color: rgb(99, 84, 194);
+  color: white;
 }
 
 /* Main Home Page css  */
@@ -70,9 +95,11 @@ video {
   text-align: center;
 }
 
+
 .heading-home h2 {
   font-size: 3rem;
-  font-family: var(--font5);
+  font-family: var(--font6);
+  font-weight: 700;
 }
 
 .home-content p {
@@ -123,9 +150,11 @@ video {
 }
 
 .skills-head {
-  font-size: 40px;
-  font-family: var(--font2);
-  color: navy;
+  font-size: 33px;
+  font-family: var(--font6);
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .skills-icons .gap-1 {
@@ -140,7 +169,7 @@ video {
   margin-left: 2%;
   font-size: 15px;
   padding: 8px 12px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   font-family: var(--font1);
 }
 
@@ -156,7 +185,6 @@ video {
   margin-left: 2%;
   font-size: 15px;
   padding: 8px 12px;
-  border-radius: 8px;
   font-family: var(--font1);
 }
 
@@ -170,9 +198,11 @@ video {
 }
 
 .right-about h4 {
-  font-size: 40px;
-  font-family: var(--font2);
-  color: navy;
+  font-size: 34px;
+  font-family: var(--font6);
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .right-about p {
@@ -180,6 +210,30 @@ video {
   font-size: 17px;
   width: 100%;
   font-family: var(--font1);
+}
+
+.aboutbtn {
+  padding: 5px 19px;
+  background-color: black;
+  color: white;
+  font-family: var(--font6);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+
+.connectbtn {
+  padding: 5px 19px;
+  background-color: rgb(39, 37, 37);
+  color: white;
+  font-family: var(--font6);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  font-size: 14px;
 }
 
 /* .linkden-id {
@@ -208,9 +262,11 @@ video {
 
 .services-container h4 {
   text-align: center;
-  font-size: 2.8rem;
-  font-family: var(--font2);
+  font-size: 2.4rem;
+  font-family: var(--font6);
   color: navy;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .services-container p {
@@ -289,9 +345,11 @@ video {
 }
 
 .heading-sec__main {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   color: navy;
-  font-family: var(--font2);
+  font-family: var(--font6);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .heading-sec__sub {
@@ -526,6 +584,10 @@ video {
     font-family: var(--font2);
   }
 
+  .nav-logo {
+    display: none;
+  }
+
   .modal-heading1 p {
     font-size: 14px;
     font-family: var(--font2);
@@ -549,6 +611,7 @@ video {
 
   .nav-title {
     font-size: 14px;
+    font-family: var(--font6);
 
   }
 

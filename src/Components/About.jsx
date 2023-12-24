@@ -75,7 +75,7 @@ export const About = (props) => {
                             </div>
                         </p>
                         <span className='linkden-id'>
-                            <button type="button" class="btn btn-primary" onClick={onlinkdin}>Know Me</button>
+                            <button type="button" class="aboutbtn" onClick={onlinkdin} style={{backgroundColor: props.mode === 'light'?'':'white', color: props.mode === 'light'?'':'black', fontWeight: props.mode === 'light'?'':'600'}}>Know Me</button>
                         </span>
                     </div>
                 </div>
