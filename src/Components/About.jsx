@@ -41,6 +41,7 @@ export const About = (props) => {
                                     <h4>React.js</h4>
                                     <h4>Next.js</h4>
                                     <h4>Node.js</h4>
+                                    <h4>MongoDB</h4>
 
                                 </div>
                                 <div className='gap'>

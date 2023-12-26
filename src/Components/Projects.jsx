@@ -6,6 +6,8 @@ import { ProjectModal1 } from './ProjectModal1'
 import { ProjectModal2 } from './ProjectModal2'
 import prj1 from '../images/prj1.png'
 import prj2 from '../images/prj2.png'
+import prjedit from '../images/prj2x.png'
+import prj3 from '../images/prj3.png'
 
 
 
@@ -24,6 +26,14 @@ export const Projects = (props) => {
     // const handleOnClose1 = () => {
     //     setShowModal2(false);
     // }
+
+    const onPrj1 = ()=>{
+        window.location.href = "https://www.syedtalhahussain.com/";
+    }
+
+    const onPrj2 = ()=>{
+        // window.location.href = "https://www.syedtalhahussain.com/";
+    }
 
     const ref = useRef(null);
 
@@ -61,7 +71,7 @@ export const Projects = (props) => {
                 </h2>
                 <div className="row my-4" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                 </div>
-
+{/* 
                 <div className="projects__content">
                     <div className="projects__row" >
                         <div className="projects__row-img-cont" >
@@ -73,8 +83,27 @@ export const Projects = (props) => {
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
                             <div>
-                                <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button type="button"  class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={prjedit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                        </div>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>PORTFOLIO</h3>
+                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
+                                A Portfolio Website for Business Usage and others.
+                            </p>
+                            <div>
+                                <button onClick={onPrj1} type="button" class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
                                 </button>
                             </div>
                         </div>
@@ -84,16 +113,16 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj2} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={prj3} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Portfolio-Web</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE STORE</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Portfolio Website for Business Usage and others.
+                                A Full-Fledged e-commerce site with product recommendations.
                             </p>
                             <div>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    More Info
+                                <button onClick={onPrj2} type="button" class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
                                 </button>
                             </div>
                         </div>
