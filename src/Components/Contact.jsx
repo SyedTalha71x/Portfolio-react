@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 
 export const Contact = (props) => {
+
+  const [name, setname] = useState()
+  const [email, setemail] = useState()
+  const [subject, setsubject] = useState()
+  const [message, setmessage] = useState()
+
   const ref = useRef(null);
 
   const useinview = useInView(ref, { once: true });
@@ -13,6 +19,38 @@ export const Contact = (props) => {
       maincontrols.start("visible");
     }
   }, [useinview]);
+
+  const handleChange = (e) => {
+    if (e.target.name == "name") {
+      setname(e.target.value);
+    }
+    else if (e.target.name == "email") {
+      setemail(e.target.value);
+    }
+    else if (e.target.name == "subject") {
+      setsubject(e.target.value);
+    }
+    else if (e.target.name == "message") {
+      setmessage(e.target.value);
+    }
+  }
+  const submitHandle = async (e) => {
+    const { name, email, subject, message } = data;
+
+    let res = fetch('http://localhost:4000/api/cont/addcontact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+    let response = res.json();
+    console.log(response);
+    setname('')
+    setemail('')
+    setsubject('')
+    setmessage('')
+  }
 
   return (
     <div ref={ref} className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
@@ -28,22 +66,22 @@ export const Contact = (props) => {
         }}
         className="contact-row">
         <div className="left-contact">
-          <form action="" id='contact'>
+          <form action="" id='contact' onSubmit={submitHandle}>
             <div
               className="contact-form">
               <h4>Lets work together?</h4>
               <div className="form-x">
                 <div className="form-group">
-                  <input type="text" name='name' placeholder='Name' />
+                  <input value={name} onChange={handleChange} type="name" name='name' id='name' placeholder='Name' />
                 </div>
                 <div className="form-group">
-                  <input type="text" name='email' placeholder='Email' />
+                  <input value={email} onChange={handleChange} type="email" name='email' id='email' placeholder='Email' />
                 </div>
                 <div className="form-group">
-                  <input type="text" name='subject' placeholder='Subject' />
+                  <input value={subject} onChange={handleChange} type="subject" name='subject' id='subject' placeholder='Subject' />
                 </div>
                 <div className="form-group">
-                  <input type="textarea" name='message' placeholder='Message' />
+                  <input value={message} onChange={handleChange} type="message" name='message' id='message' placeholder='Message' />
                 </div>
                 <div className="form-group-btn">
                   <button className="connectbtn">Connect</button>
