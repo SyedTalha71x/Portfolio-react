@@ -8,6 +8,7 @@ import prj1 from '../images/prj1.png'
 import prj2 from '../images/prj2.png'
 import prjedit from '../images/prj2x.png'
 import prj3 from '../images/prj3.png'
+import prj3edit from '../images/editprj1.png'
 
 
 
@@ -94,7 +95,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prjedit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={prj3edit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>PORTFOLIO</h3>

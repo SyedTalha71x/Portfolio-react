@@ -44,7 +44,7 @@ export const Services = (props) => {
                             duration: 0.7, delay: 0.25
                         }} className="boxex" style={{ backgroundColor: props.mode === 'light' ? '' : '#131241', boxShadow: props.mode === 'light' ? ' ' : '3px 3px 15px #31bbb4' }} >
                         <div className="image-box">
-                            <i class="fa-brands fa-creative-commons-nd" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
+                            <i className="fa-brands fa-creative-commons-nd" style={{ color: props.mode === 'light' ? '' : 'white' }}></i>
                         </div>
                         <h1 style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>Web Design</h1>
                         <p style={{ color: props.mode === 'light' ? '' : '#c9c9e2' }}>I will provide you the best and creative Web Designs.

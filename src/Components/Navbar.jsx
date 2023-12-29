@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import video1 from '../assets/bgvideo.mp4'
+import video2 from '../assets/bgvideo2.mp4'
 import { motion, useInView, useAnimation } from "framer-motion"
 import { BsBrowserFirefox } from "react-icons/bs";
 
@@ -33,7 +34,7 @@ export const Navbar = (props) => {
     const { title } = props;
     return (
         <>
-            <video src={video1} autoPlay loop muted></video>
+            <video src={video2} autoPlay loop muted></video>
             <div className="overlay"></div>
             <nav className="nav navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container-fluid">
@@ -74,14 +75,14 @@ export const Navbar = (props) => {
                         <h2>I'M, <span>TALHA</span> A PROFESSIONAL WEB DEVELOPER</h2>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
                         <div className="main-icons">
-                            <i class="fa-brands fa-facebook" onClick={onfb}></i>
-                            <i class="fa-brands fa-github" onClick={ongit}></i>
-                            <i class="fa-brands fa-instagram" onClick={oninsta}></i>
-                            <i class="fa-brands fa-linkedin" onClick={onlinkdin}></i>
+                            <i className="fa-brands fa-facebook" onClick={onfb}></i>
+                            <i className="fa-brands fa-github" onClick={ongit}></i>
+                            <i className="fa-brands fa-instagram" onClick={oninsta}></i>
+                            <i className="fa-brands fa-linkedin" onClick={onlinkdin}></i>
                         </div>
                         <div className="hireme">
                             <a href="./#contact">
-                            <button type="button"  class="hirebtn btn-warning">Hire me</button>
+                            <button type="button"  className="hirebtn btn-warning">Hire me</button>
                             </a>
                         </div>
                     </div>

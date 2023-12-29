@@ -33,6 +33,20 @@ export const About = (props) => {
                 }}
                 className="main-about-page">
                 <div className="about-content">
+                    <div className="right-about">
+                        <h4 style={{ color: props.mode === 'light' ? 'navy' : 'white' }}>About Me</h4>
+                        <p style={{ color: props.mode === 'light' ? '' : 'white' }}>I'm a passionate Software Engineer building quality softwares. Check out some of my projects from projects section I'm working with full of my potential in Fields like Desktop Development and Web Development. I have a great knowledge of debugging the applications. I'm open to Job opportunities where I can contribute, learn and grow. Satisfaction from my clients is my first priority.
+                            <div>
+                                <p>I am a motivated individual and very much excited to work as in a development team with quality Software Engineers, where i can enhance my skills and learn new things about Software Industry</p>
+                            </div>
+                            <div>
+                                <p>In the last couple of years I have been working with my full potential in the above fields and most recently on Web Development.</p>
+                            </div>
+                        </p>
+                        <span className='linkden-id'>
+                            <button type="button" className="aboutbtn" onClick={onlinkdin} style={{ backgroundColor: props.mode === 'light' ? '' : 'white', color: props.mode === 'light' ? '' : 'black', fontWeight: props.mode === 'light' ? '' : '600' }}>Know Me</button>
+                        </span>
+                    </div>
                     <div className="left-about">
                         <div className="skills">
                             <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Specializations</h4>
@@ -65,20 +79,7 @@ export const About = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="right-about">
-                        <h4 style={{ color: props.mode === 'light' ? 'navy' : 'white' }}>About Me</h4>
-                        <p style={{ color: props.mode === 'light' ? '' : 'white' }}>I'm a passionate Software Engineer building quality softwares. Check out some of my projects from projects section I'm working with full of my potential in Fields like Desktop Development and Web Development. I have a great knowledge of debugging the applications. I'm open to Job opportunities where I can contribute, learn and grow. Satisfaction from my clients is my first priority.
-                            <div>
-                                <p>I am a motivated individual and very much excited to work as in a development team with quality Software Engineers, where i can enhance my skills and learn new things about Software Industry</p>
-                            </div>
-                            <div>
-                                <p>In the last couple of years I have been working with my full potential in the above fields and most recently on Web Development.</p>
-                            </div>
-                        </p>
-                        <span className='linkden-id'>
-                            <button type="button" class="aboutbtn" onClick={onlinkdin} style={{backgroundColor: props.mode === 'light'?'':'white', color: props.mode === 'light'?'':'black', fontWeight: props.mode === 'light'?'':'600'}}>Know Me</button>
-                        </span>
-                    </div>
+
                 </div>
             </motion.div>
         </div>

@@ -1,5 +1,8 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export const Contact = (props) => {
 
@@ -35,25 +38,44 @@ export const Contact = (props) => {
     }
   }
   const submitHandle = async (e) => {
-    const { name, email, subject, message } = data;
-
-    let res = fetch('http://localhost:4000/api/cont/addcontact', {
+    e.preventDefault();
+    const data = { name, email, subject, message };
+    let response = await fetch('http://localhost:4000/api/cont/addcontact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data)
     })
-    let response = res.json();
-    console.log(response);
+    let json = await response.json();
+    console.log(json);
     setname('')
     setemail('')
     setsubject('')
     setmessage('')
+    if (response.success) {
+      toast.success("Your Information has been Submitted, We will get back to you in some time!", {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   }
 
   return (
     <div ref={ref} className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
+      <ToastContainer
+        position='top-center'
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+      />
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
