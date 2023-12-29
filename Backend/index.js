@@ -5,7 +5,7 @@ connectDB();
 
 
 const app = express();
-const port = 3005;
+const port = 3001;
 
 app.use(cors())
 app.use(express.json())

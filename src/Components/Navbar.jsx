@@ -79,6 +79,11 @@ export const Navbar = (props) => {
                             <i class="fa-brands fa-instagram" onClick={oninsta}></i>
                             <i class="fa-brands fa-linkedin" onClick={onlinkdin}></i>
                         </div>
+                        <div className="hireme">
+                            <a href="./#contact">
+                            <button type="button"  class="hirebtn btn-warning">Hire me</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

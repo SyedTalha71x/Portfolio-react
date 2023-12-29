@@ -53,7 +53,7 @@ html {
 }
 
 .nav-title {
-  text-align:center;
+  text-align: center;
   font-family: var(--font1);
   font-weight: 600;
 }
@@ -73,6 +73,18 @@ html {
 .navbtn:hover {
   background-color: rgb(99, 84, 194);
   color: white;
+}
+
+.hirebtn {
+  margin-top: 1.1%;
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: none;
+  color: black;
+  font-family: var(--font6);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 /* Main Home Page css  */
@@ -169,7 +181,7 @@ video {
 
 .skills-icons .gap-1 h4 {
   background-color: #dcd1d1;
-  margin-left: 2%;
+  margin-left: 1%;
   font-size: 15px;
   padding: 8px 12px;
   /* border-radius: 4px; */
@@ -186,7 +198,7 @@ video {
 
 .gap h4 {
   background-color: #dcd1d1;
-  margin-left: 2%;
+  margin-left: 1%;
   font-size: 15px;
   padding: 8px 12px;
   font-family: var(--font1);
@@ -368,13 +380,15 @@ video {
 .projects__content {
   margin-top: 6rem;
 }
-.projects__row-content-title{
+
+.projects__row-content-title {
   font-size: 23px;
   font-weight: 600;
   font-family: var(--font6);
 
 }
-.prjbtn{
+
+.prjbtn {
   padding: 7px 25px;
   background-color: rgb(8, 8, 110);
   color: white;
@@ -582,20 +596,6 @@ video {
     color: #9d9ac9;
     font-weight: bolder;
   }
-
-  .home-content::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 73%;
-    transform: translate(-50%, -50%);
-    height: 2px;
-    background-color: #9b96dc;
-    width: 20%;
-    margin: auto;
-
-  }
-
 }
 
 
@@ -618,6 +618,10 @@ video {
 
   .modaltools-h h3 {
     font-size: 20px;
+  }
+
+  .hirebtn {
+    margin-top: 3%;
   }
 
   .bold-tools {
