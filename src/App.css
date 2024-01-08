@@ -370,19 +370,19 @@ video {
 
 
 .one_row {
-  padding: 30px;
+  padding: 20px;
   /* border: 2px solid white; */
   margin: 6px;
 }
 
 .two_row {
-  padding: 30px;
+  padding: 20px;
   /* border: 2px solid white; */
   margin: 6px;
 }
 
 .three_row {
-  padding: 30px;
+  padding: 20px;
   /* border: 2px solid white; */
   margin: 6px;
 }
@@ -657,7 +657,7 @@ video {
   }
 
   .home {
-    background-color: #0b031a;
+    background: #151515;
     height: 90vh;
   }
 
@@ -690,7 +690,7 @@ video {
   }
 
   .hirebtn {
-    margin-top: 3%;
+    margin-top: 4%;
   }
 
   .bold-tools {
@@ -719,18 +719,23 @@ video {
     font-size: 12px;
   }
 
-
-  .home-content h2 {
-    font-size: 34px;
-    width: 100%;
+  .miniheading h2 {
+    font-size: 25px;
+    font-family: var(--font6);
   }
 
-  .home-content p {
-    font-size: 13px;
+  .secheading {
+
+    font-size: 27px;
+    font-family: var(--font6);
+  }
+
+  .heading-home p {
+    padding-top: 1rem;
     width: 80%;
     margin: auto;
-    margin-top: 2%;
   }
+
 
   .main-icons i {
     margin-top: 25px;
@@ -768,13 +773,13 @@ video {
   }
 
   .skills-icons .gap-1 h4 {
-    font-size: 14px;
+    font-size: 12px;
 
   }
 
   .skills-icons .gap h4 {
-    font-size: 14px;
-    width: 100%;
+    font-size: 12px;
+
 
   }
 
@@ -865,23 +870,32 @@ video {
     font-size: 16px;
   }
 
+  .servicesection {
+    margin-top: 4%;
+  }
+
+  .mainservicecontainer {
+    margin-top: 7rem;
+  }
+
   .service_row {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
   }
 
   .servicesection h1 {
     text-align: center;
-    font-size: 26px;
+    font-size: 21px;
   }
 
   .servicesection p {
-    margin-top: 2%;
+    margin-top: 6%;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
+    width: 100%;
   }
 
   .semiserviceheading {
@@ -889,10 +903,10 @@ video {
   }
 
   .icons {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 
   .service_row p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }

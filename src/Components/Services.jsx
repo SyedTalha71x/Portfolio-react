@@ -16,7 +16,18 @@ export const Services = (props) => {
     }, [useinview]);
 
     return (
-        <div className='mainservicecontainer'>
+        <motion.div
+            variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 }
+            }}
+            initial="hidden"
+            animate={maincontrols}
+            transition={{
+                duration: 0.7, delay: 0.25
+            }}
+
+            className='mainservicecontainer' ref={ref}>
             <div className="servicesection">
                 <h1>Why people choose us</h1>
                 <p>My services are always outstanding as i always focus on my clients for proviging them the best things</p>
@@ -46,6 +57,6 @@ export const Services = (props) => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
