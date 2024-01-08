@@ -38,7 +38,7 @@ export const Navbar = (props) => {
             <div className="overlay"></div>
             <nav className="nav navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container-fluid">
-                    <BsBrowserFirefox className='nav-logo' />
+                    {/* <BsBrowserFirefox className='nav-logo' /> */}
                     <a className="navbar-brand nav-title" href="#"> <span>  {props.title.toUpperCase()}  </span>  </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -72,7 +72,15 @@ export const Navbar = (props) => {
 
                 <div className="home-content">
                     <div className="heading-home">
-                        <h2>I'M, <span>TALHA</span> A PROFESSIONAL WEB DEVELOPER</h2>
+                        <div className='miniheading'>
+                            <h2 >
+                                HEY  I'M, <span>TALHA</span>
+                            </h2>
+                        </div>
+                        <div>
+
+                            <h2 className='secheading'> A PROFESSIONAL WEB DEVELOPER</h2>
+                        </div>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
                         <div className="main-icons">
                             <i className="fa-brands fa-facebook" onClick={onfb}></i>
@@ -82,7 +90,7 @@ export const Navbar = (props) => {
                         </div>
                         <div className="hireme">
                             <a href="./#contact">
-                            <button type="button"  className="hirebtn btn-warning">Hire me</button>
+                                <button type="button" className="hirebtn">Hire me</button>
                             </a>
                         </div>
                     </div>

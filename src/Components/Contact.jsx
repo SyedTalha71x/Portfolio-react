@@ -38,7 +38,6 @@ export const Contact = (props) => {
     }
   }
   const submitHandle = async (e) => {
-    e.preventDefault();
     const data = { name, email, subject, message };
     let response = await fetch('http://localhost:4000/api/cont/addcontact', {
       method: 'POST',

@@ -49,7 +49,7 @@ export const About = (props) => {
                     </div>
                     <div className="left-about">
                         <div className="skills">
-                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Specializations</h4>
+                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Capabilites</h4>
                             <div className="skills-icons">
                                 <div className="gap-1">
                                     <h4>React.js</h4>
@@ -73,7 +73,7 @@ export const About = (props) => {
                                 <div className='gap'>
                                     <h4>Javascript</h4>
                                     <h4>Tailwind</h4>
-                                    <h4>C#</h4>
+                                    <h4>CSharp</h4>
 
                                 </div>
                             </div>

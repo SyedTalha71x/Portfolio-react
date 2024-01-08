@@ -42,19 +42,26 @@ html {
 }
 
 .nav {
-  background-color: #02041d;
+  /* background-color: #02041d; */
+  background-color: black;
 }
 
 .nav-item a:hover {
   /* outline: 1cqb whitesmoke; */
-  border-bottom: 2px solid whitesmoke;
-  transition: 0.8s ease;
+  text-decoration: underline white;
+  text-underline-offset: 20px;
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
 }
 
 .nav-title {
-  text-align: center;
-  font-family: var(--font1);
+  font-family: var(--font6);
   font-weight: 600;
+}
+
+.nav-title:hover {
+  transform: scale(0.9);
+  transition: .4s ease-in-out;
 }
 
 .navbtn {
@@ -70,20 +77,46 @@ html {
 }
 
 .navbtn:hover {
-  background-color: rgb(99, 84, 194);
+  background-color: transparent;
   color: white;
+  transition: .4s ease-in-out;
+
+}
+
+.miniheading h2 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.miniheading h2 span {
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+
+.secheading {
+  font-size: 4rem;
+  font-weight: bolder;
 }
 
 .hirebtn {
   margin-top: 1.1%;
-  border-radius: 20px;
-  padding: 5px 20px;
+  padding: 5px 30px;
   border: none;
-  color: black;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(106, 106, 190);
   font-family: var(--font6);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.hirebtn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  transition: .4s ease-in-out;
 }
 
 /* Main Home Page css  */
@@ -107,13 +140,6 @@ video {
 
 .heading-home {
   text-align: center;
-}
-
-
-.heading-home h2 {
-  font-size: 3rem;
-  font-family: var(--font6);
-  font-weight: 700;
 }
 
 .home-content p {
@@ -184,8 +210,18 @@ video {
   font-size: 15px;
   padding: 8px 12px;
   /* border-radius: 4px; */
-  border-radius: 6px;
-  font-family: var(--font1);
+  border-radius: 3px;
+  font-family: var(--font6);
+
+  font-weight: 600;
+  color: rgb(59, 53, 53);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.skills-icons .gap-1 h4:hover {
+  transform: scale(1.1);
+  transition: .5s ease;
 }
 
 .gap {
@@ -196,12 +232,21 @@ video {
 }
 
 .gap h4 {
+  cursor: pointer;
   background-color: #dcd1d1;
   margin-left: 1%;
   font-size: 15px;
   padding: 8px 12px;
-  font-family: var(--font1);
-  border-radius: 6px;
+  font-family: var(--font6);
+  border-radius: 3px;
+  font-weight: 600;
+  color: rgb(59, 53, 53);
+  text-transform: uppercase;
+}
+
+.gap h4:hover {
+  transform: scale(1.1);
+  transition: .5s ease;
 }
 
 .skills-span {
@@ -230,7 +275,7 @@ video {
 
 .aboutbtn {
   padding: 7px 25px;
-  background-color: rgb(12, 12, 124);
+  background-color: rgb(24, 24, 93);
   color: white;
   font-family: var(--font6);
   font-weight: 500;
@@ -238,6 +283,14 @@ video {
   text-align: center;
   border: none;
   font-size: 14px;
+}
+
+.aboutbtn:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
 }
 
 .connectbtn {
@@ -265,73 +318,83 @@ video {
   color: white;
 } */
 
-/* Services CSS HERE  */
-.main-container-page {
-  height: 100%;
-  width: 90%;
-  margin: auto;
-}
-
-.services-container {
-  margin-top: 10%;
-}
-
-.services-container h4 {
-  text-align: center;
-  font-size: 2.4rem;
-  font-family: var(--font6);
-  color: navy;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.services-container p {
-  text-align: center;
+/* Services section here  */
+.mainservicecontainer {
+  margin-top: 9%;
   width: 100%;
-  font-size: 18px;
-}
-
-.row {
-  height: 4px;
-  background-color: blue;
-  width: 50px;
-  margin: auto;
-  margin-bottom: 5%;
-}
-
-.service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.boxex {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(247, 242, 242);
   padding: 30px;
-  text-align: center;
-  margin: 10px;
+  background: #151515;
+  color: white;
+  cursor: pointer;
 }
 
-.image-box i {
-  font-size: 80px;
-  color: blue;
+.servicesection {
+  padding: 30px;
 }
 
-.image-box i:hover {
-  color: rgb(79, 166, 196);
+.servicesection h1 {
+  font-size: 2.3rem;
+  color: white;
+  font-family: var(--font6);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.boxex h1 {
-  margin-top: 15px;
-  font-family: var(--font1);
+.servicesection p {
+  width: 100%;
+  font-family: var(--font6);
+  color: white;
+  font-size: 16px;
+}
+
+.service_row {
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.semiserviceheading {
+  font-family: var(--font6);
+  text-transform: uppercase;
   font-size: 25px;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-.boxex p {
-  font-size: 18px;
+.service_row p {
+  font-family: var(--font6);
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+
+.one_row {
+  padding: 30px;
+  /* border: 2px solid white; */
+  margin: 6px;
+}
+
+.two_row {
+  padding: 30px;
+  /* border: 2px solid white; */
+  margin: 6px;
+}
+
+.three_row {
+  padding: 30px;
+  /* border: 2px solid white; */
+  margin: 6px;
+}
+
+.icons {
+  font-size: 4rem;
+  color: red;
+}
+
+.icons:hover {
+  transition: .4s ease;
+  transform: scale(1.1);
 }
 
 /* Projects Css here  */
@@ -458,9 +521,10 @@ video {
   color: white;
   outline: none;
   padding: 5px;
-  font-size: 13px;
-  font-family: var(--font6);
-  font-weight: 700;
+  font-size: 12px;
+  /* font-family: var(--font6); */
+  /* font-weight: 700; */
+  text-transform: uppercase;
 }
 
 .form-group-btn {
@@ -641,12 +705,6 @@ video {
 
   }
 
-  .nav-title {
-    font-size: 14px;
-    font-family: var(--font6);
-
-  }
-
   .nav-item a {
     font-family: var(--font6);
   }
@@ -728,22 +786,6 @@ video {
     font-size: 15px;
   }
 
-  .service {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .services-container h4 {
-    font-size: 27px;
-    margin-top: 8rem;
-  }
-
-  .services-container p {
-    font-size: 15px;
-  }
-
   .contact-row {
     width: 100%;
     display: flex;
@@ -752,14 +794,6 @@ video {
 
   .tools button {
     font-size: 13px;
-  }
-
-  .boxex h1 {
-    font-size: 20px;
-  }
-
-  .boxex i {
-    font-size: 40px;
   }
 
   .copyright {
@@ -829,5 +863,36 @@ video {
 
   .projects__row-content-desc {
     font-size: 16px;
+  }
+
+  .service_row {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicesection h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .servicesection p {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .semiserviceheading {
+    font-size: 1.3rem;
+  }
+
+  .icons {
+    font-size: 2.3rem;
+  }
+
+  .service_row p {
+    font-size: 14px;
   }
 }

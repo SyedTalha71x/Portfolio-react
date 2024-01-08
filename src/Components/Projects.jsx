@@ -9,7 +9,8 @@ import prj2 from '../images/prj2.png'
 import prjedit from '../images/prj2x.png'
 import prj3 from '../images/prj3.png'
 import prj3edit from '../images/editprj1.png'
-
+import prj4 from '../images/prj4.png'
+import prj1editon from '../images/prj1editon.png'
 
 
 
@@ -28,11 +29,11 @@ export const Projects = (props) => {
     //     setShowModal2(false);
     // }
 
-    const onPrj1 = ()=>{
+    const onPrj1 = () => {
         window.location.href = "https://www.syedtalhahussain.com/";
     }
 
-    const onPrj2 = ()=>{
+    const onPrj2 = () => {
         // window.location.href = "https://www.syedtalhahussain.com/";
     }
 
@@ -72,7 +73,7 @@ export const Projects = (props) => {
                 </h2>
                 <div className="row my-4" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                 </div>
-{/* 
+                {/* 
                 <div className="projects__content">
                     <div className="projects__row" >
                         <div className="projects__row-img-cont" >
@@ -95,7 +96,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj3edit} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={prj1editon} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>PORTFOLIO</h3>
@@ -114,12 +115,12 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj3} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={prj4} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE STORE</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>FITNESS/HEALTH PORTAL</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Full-Fledged e-commerce site with product recommendations.
+                                A full fleged Fitness/Health portal with many recommendations.
                             </p>
                             <div>
                                 <button onClick={onPrj2} type="button" class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
