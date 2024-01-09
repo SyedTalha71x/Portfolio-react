@@ -4,13 +4,13 @@ const Contact = require('../Models/Contact');
 
 router.post('/addcontact', async (req, res) => {
     const { name, email, subject, message } = req.body;
-    const info = new Contact({
-        name,
-        email,
-        subject,
-        message,
-    })
     try {
+        const info = new Contact({
+            name,
+            email,
+            subject,
+            message,
+        })
         await info.save();
         res.status(200).json({ success: "Success" });
     }

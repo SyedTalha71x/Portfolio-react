@@ -74,6 +74,7 @@ html {
   text-align: center;
   font-size: 14px;
   border: none;
+  border-radius: 3px;
 }
 
 .navbtn:hover {
@@ -99,7 +100,8 @@ html {
 }
 
 .hirebtn {
-  margin-top: 1.1%;
+  border-radius: 3px;
+  margin-top: 0.5%;
   padding: 5px 30px;
   border: none;
   color: white;
@@ -157,8 +159,9 @@ video {
 }
 
 .main-icons i {
-  margin: 3px;
-  font-size: 23px;
+  margin: 5px;
+  font-size: 26px;
+  margin-top: 1.3rem;
 }
 
 
@@ -176,8 +179,9 @@ video {
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 3%;
+  grid-template-columns: 1fr 1.1fr;
+  margin-bottom: 5%;
+  gap: 2rem;
 }
 
 .main-about-page {
@@ -185,77 +189,9 @@ video {
   width: 100%;
 }
 
-.left-about {
-  padding: 20px;
-}
-
-.skills-head {
-  font-size: 33px;
-  font-family: var(--font6);
-  color: black;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.skills-icons .gap-1 {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-
-}
-
-.skills-icons .gap-1 h4 {
-  background-color: #dcd1d1;
-  margin-left: 1%;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* border-radius: 4px; */
-  border-radius: 3px;
-  font-family: var(--font6);
-
-  font-weight: 600;
-  color: rgb(59, 53, 53);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.skills-icons .gap-1 h4:hover {
-  transform: scale(1.1);
-  transition: .5s ease;
-}
-
-.gap {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-  /* margin-bottom: 10px; */
-}
-
-.gap h4 {
-  cursor: pointer;
-  background-color: #dcd1d1;
-  margin-left: 1%;
-  font-size: 15px;
-  padding: 8px 12px;
-  font-family: var(--font6);
-  border-radius: 3px;
-  font-weight: 600;
-  color: rgb(59, 53, 53);
-  text-transform: uppercase;
-}
-
-.gap h4:hover {
-  transform: scale(1.1);
-  transition: .5s ease;
-}
-
-.skills-span {
-  font-size: 17px;
-  font-family: var(--font1);
-}
-
-.right-about {
-  padding: 20px;
+.left-about img {
+  height: 100%;
+  width: 100%;
 }
 
 .right-about h4 {
@@ -263,7 +199,7 @@ video {
   font-family: var(--font6);
   color: black;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bolder;
 }
 
 .right-about p {
@@ -348,7 +284,7 @@ video {
 }
 
 .service_row {
-  margin-top: 4%;
+  margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -363,9 +299,10 @@ video {
 
 .service_row p {
   font-family: var(--font6);
-  text-transform: uppercase;
-  font-size: 15px;
+  /* text-transform: uppercase; */
+  font-size: 14px;
   margin-top: 1rem;
+  width: 100%;
 }
 
 
@@ -387,9 +324,37 @@ video {
   margin: 6px;
 }
 
+.four_row {
+  padding: 20px;
+  margin: 6px;
+}
+
+.five_row {
+  padding: 20px;
+  margin: 6px;
+}
+
+.six_row {
+  padding: 20px;
+  margin: 6px;
+}
+
 .icons {
   font-size: 4rem;
   color: red;
+}
+
+.freelance_icons {
+  font-size: 4.7rem;
+  color: red;
+}
+
+.ui_design {
+  font-size: 4.7rem;
+}
+
+.manage_icon {
+  font-size: 4.8rem;
 }
 
 .icons:hover {
@@ -470,7 +435,6 @@ video {
 .projects__row-img-cont img {
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid black;
 }
 
 /* Contact form css here  */
@@ -501,7 +465,8 @@ video {
   font-size: 1.3rem;
   font-family: var(--font6);
   cursor: pointer;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .link-ref {
@@ -522,9 +487,6 @@ video {
   outline: none;
   padding: 5px;
   font-size: 12px;
-  /* font-family: var(--font6); */
-  /* font-weight: 700; */
-  text-transform: uppercase;
 }
 
 .form-group-btn {
@@ -562,6 +524,8 @@ video {
   font-size: 1.3rem;
   font-family: var(--font6);
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contact-info p {
@@ -649,17 +613,20 @@ video {
 
 @media screen and (max-width:600px) {
   video {
-    display: none;
+    display: block;
   }
 
   .overlay {
-    display: none;
+    display: block;
   }
 
   .home {
-    background: #151515;
-    height: 90vh;
+
+    height: 100%;
+    width: 100%;
+
   }
+
 
   .heading-home span {
     color: #9d9ac9;
@@ -670,40 +637,19 @@ video {
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
-
-  .modal-heading1 h3 {
-    font-size: 20px;
-    font-family: var(--font2);
+  .nav-title {
+    font-size: 15px;
   }
+
 
   .nav-logo {
     display: none;
   }
 
-  .modal-heading1 p {
-    font-size: 14px;
-    font-family: var(--font2);
-  }
-
-  .modaltools-h h3 {
-    font-size: 20px;
-  }
-
   .hirebtn {
-    margin-top: 4%;
+    margin-top: 6%;
   }
 
-  .bold-tools {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-
-  .bold-tools h4 {
-    font-size: 13px;
-    width: 100%;
-
-  }
 
   .nav-item a {
     font-family: var(--font6);
@@ -720,13 +666,15 @@ video {
   }
 
   .miniheading h2 {
-    font-size: 25px;
+    font-size: 30px;
+    width: 100%;
     font-family: var(--font6);
   }
 
   .secheading {
+    width: 100%;
 
-    font-size: 27px;
+    font-size: 35px;
     font-family: var(--font6);
   }
 
@@ -736,9 +684,8 @@ video {
     margin: auto;
   }
 
-
   .main-icons i {
-    margin-top: 25px;
+    margin-top: 2.4rem;
     font-size: 20px;
   }
 
@@ -754,34 +701,6 @@ video {
     text-align: center;
   }
 
-  .skills {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-head {
-    font-size: 23px;
-  }
-
-  .skills-icons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .skills-icons .gap-1 h4 {
-    font-size: 12px;
-
-  }
-
-  .skills-icons .gap h4 {
-    font-size: 12px;
-
-
-  }
 
   .right-about h4 {
     font-size: 23px;
@@ -835,6 +754,10 @@ video {
     font-size: 13px;
   }
 
+  .main-container {
+    margin-top: 10rem;
+  }
+
   .projects__row {
     display: flex;
     flex-direction: column;
@@ -845,7 +768,7 @@ video {
   }
 
   .projects__row-img-cont img {
-    height: inherit;
+    height: 100%;
     /* height: 200px; */
     width: 100%;
   }
@@ -855,18 +778,18 @@ video {
   }
 
   .heading-sec__sub {
+    margin-top: 6%;
     font-size: 15px;
+    width: 90%;
   }
 
-  .main-container {
-    margin-top: 10%;
-  }
 
   .projects__row-content-title {
     font-size: 19px;
   }
 
   .projects__row-content-desc {
+    width: 100%;
     font-size: 16px;
   }
 
@@ -888,7 +811,7 @@ video {
 
   .servicesection h1 {
     text-align: center;
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .servicesection p {
@@ -903,6 +826,18 @@ video {
   }
 
   .icons {
+    font-size: 2rem;
+  }
+
+  .manage_icon {
+    font-size: 3rem;
+  }
+
+  .freelance_icons {
+    font-size: 3rem;
+  }
+
+  .ui_design {
     font-size: 3rem;
   }
 

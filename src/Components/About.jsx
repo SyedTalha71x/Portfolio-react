@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
+import aboutpic from '../images/about.jpg'
+import aboutpic2 from '../images/about2.jpg'
 
 
 export const About = (props) => {
@@ -33,6 +35,9 @@ export const About = (props) => {
                 }}
                 className="main-about-page">
                 <div className="about-content">
+                    <div className="left-about">
+                        <img src={aboutpic2} alt="" />
+                    </div>
                     <div className="right-about">
                         <h4 style={{ color: props.mode === 'light' ? 'navy' : 'white' }}>About Me</h4>
                         <p style={{ color: props.mode === 'light' ? '' : 'white' }}>I'm a passionate Software Engineer building quality softwares. Check out some of my projects from projects section I'm working with full of my potential in Fields like Desktop Development and Web Development. I have a great knowledge of debugging the applications. I'm open to Job opportunities where I can contribute, learn and grow. Satisfaction from my clients is my first priority.
@@ -46,38 +51,6 @@ export const About = (props) => {
                         <span className='linkden-id'>
                             <button type="button" className="aboutbtn" onClick={onlinkdin} style={{ backgroundColor: props.mode === 'light' ? '' : 'white', color: props.mode === 'light' ? '' : 'black', fontWeight: props.mode === 'light' ? '' : '600' }}>Know Me</button>
                         </span>
-                    </div>
-                    <div className="left-about">
-                        <div className="skills">
-                            <h4 className='skills-head' style={{ color: props.mode === 'light' ? 'navy' : 'white' }} >My Capabilites</h4>
-                            <div className="skills-icons">
-                                <div className="gap-1">
-                                    <h4>React.js</h4>
-                                    <h4>Next.js</h4>
-                                    <h4>Node.js</h4>
-                                    <h4>MongoDB</h4>
-
-                                </div>
-                                <div className='gap'>
-                                    <h4>SQL</h4>
-                                    <h4>Git</h4>
-                                    <h4>Github</h4>
-
-                                </div>
-                                <div className='gap'>
-                                    <h4>Responsiveness</h4>
-                                    <h4>HTML</h4>
-                                    <h4>CSS</h4>
-
-                                </div>
-                                <div className='gap'>
-                                    <h4>Javascript</h4>
-                                    <h4>Tailwind</h4>
-                                    <h4>CSharp</h4>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>

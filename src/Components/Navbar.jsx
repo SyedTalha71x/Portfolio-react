@@ -82,17 +82,18 @@ export const Navbar = (props) => {
                             <h2 className='secheading'> A PROFESSIONAL WEB DEVELOPER</h2>
                         </div>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
+                        <div className="hireme">
+                            <a href="./#contact">
+                                <button type="button" className="hirebtn">Hire me</button>
+                            </a>
+                        </div>
                         <div className="main-icons">
                             <i className="fa-brands fa-facebook" onClick={onfb}></i>
                             <i className="fa-brands fa-github" onClick={ongit}></i>
                             <i className="fa-brands fa-instagram" onClick={oninsta}></i>
                             <i className="fa-brands fa-linkedin" onClick={onlinkdin}></i>
                         </div>
-                        <div className="hireme">
-                            <a href="./#contact">
-                                <button type="button" className="hirebtn">Hire me</button>
-                            </a>
-                        </div>
+                      
                     </div>
                 </div>
             </div>

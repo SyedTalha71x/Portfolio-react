@@ -38,6 +38,7 @@ export const Contact = (props) => {
     }
   }
   const submitHandle = async (e) => {
+    e.preventDefault();
     const data = { name, email, subject, message };
     let response = await fetch('http://localhost:4000/api/cont/addcontact', {
       method: 'POST',
@@ -48,21 +49,15 @@ export const Contact = (props) => {
     })
     let json = await response.json();
     console.log(json);
-    setname('')
-    setemail('')
-    setsubject('')
-    setmessage('')
-    if (response.success) {
-      toast.success("Your Information has been Submitted, We will get back to you in some time!", {
-        position: 'top-center',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
+    toast.success("Your Information has been Submitted, We will get back to you in some time!", {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   }
 
   return (
