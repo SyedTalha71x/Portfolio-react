@@ -10,9 +10,9 @@ router.post('/addcontact', async (req, res) => {
             email,
             subject,
             message,
-        })
-        await info.save();
-        res.status(200).json({ success: "Success" });
+        });
+        const saveinfo = await info.save();
+        res.status(200).json({ success: "Success", saveinfo });
     }
     catch (error) {
         res.status(600).json({ error: "Cant add user information Sorry" });

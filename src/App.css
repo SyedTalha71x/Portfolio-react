@@ -192,6 +192,7 @@ video {
 .left-about img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 .right-about h4 {
@@ -811,7 +812,7 @@ video {
 
   .servicesection h1 {
     text-align: center;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .servicesection p {

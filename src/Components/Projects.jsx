@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import project1edit from '../images/prj1edit.png'
 import project2edit from '../images/prj2edit.png'
-import { ProjectModal1 } from './ProjectModal1'
-import { ProjectModal2 } from './ProjectModal2'
 import prj1 from '../images/prj1.png'
 import prj2 from '../images/prj2.png'
 import prjedit from '../images/prj2x.png'
@@ -66,8 +64,8 @@ export const Projects = (props) => {
                 <h2 className="heading heading-sec heading-sec__mb-bg">
                     <span className="heading-sec__main" style={{ color: props.mode === 'light' ? '' : 'white' }}>Projects</span>
                     <span className="heading-sec__sub" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                        Here you will find some of the personal and clients projects that I
-                        created, Each project containing its own Overview
+                        Here you will find some of the personal and clients projects that I have
+                        created
                     </span>
 
                 </h2>

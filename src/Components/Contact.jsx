@@ -49,16 +49,21 @@ export const Contact = (props) => {
     })
     let json = await response.json();
     console.log(json);
-    toast.success("Your Information has been Submitted, We will get back to you in some time!", {
-      position: 'top-center',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    if (json.success) {
+
+
+      toast.success("Your Information has been Submitted, We will get back to you in some time!", {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   }
+
 
   return (
     <div ref={ref} className="main-contact-container" style={{ boxShadow: props.mode === 'light' ? '' : '3px 3px 30px wheat' }}>
