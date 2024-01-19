@@ -8,6 +8,7 @@ import { Services } from './Components/Services'
 import { Projects } from './Components/Projects'
 import { Contact } from './Components/Contact'
 import { Footer } from './Components/Footer'
+import Skills from './Components/Skills'
 
 function App() {
   const [mode, setmode] = useState('light');
@@ -34,6 +35,7 @@ function App() {
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />
       <About mode={mode} />
       <Services mode={mode} />
+      <Skills mode={mode} />
       <Projects mode={mode} />
       <Contact mode={mode} />
       <Footer mode={mode} />

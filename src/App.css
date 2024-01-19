@@ -612,6 +612,71 @@ video {
 
 }
 
+/* Skills section here  */
+.skills_section {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  box-shadow: 3px 3px 30px rgb(167, 128, 204);
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.skills_section {
+  font-family: var(--font6);
+}
+
+.left-skills {
+  padding: 30px;
+}
+
+.right-skills {
+  padding: 30px;
+}
+
+.sectionheading h1 {
+  margin-left: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: navy;
+}
+
+.rowgap {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rowgap div {
+  background-color: rgb(39, 37, 34);
+  padding: 6px 20px;
+  border-radius: 7px;
+  margin: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font3);
+  letter-spacing: normal;
+}
+
+.rowgap div:hover {
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.skills_row {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.right-skills img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
 @media screen and (max-width:600px) {
   video {
     display: block;
@@ -638,6 +703,27 @@ video {
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
+  .skills_section{
+    margin-top: 12%;
+  }
+  .skills_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionheading h1{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  .rowgap{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 100%;
+  }
+  .rowgap div{
+    font-size: 14px;
+  }
+
   .nav-title {
     font-size: 15px;
   }
@@ -756,7 +842,7 @@ video {
   }
 
   .main-container {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 
   .projects__row {
@@ -779,7 +865,7 @@ video {
   }
 
   .heading-sec__sub {
-    margin-top: 6%;
+    margin-top: 4%;
     font-size: 15px;
     width: 90%;
   }
