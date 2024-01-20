@@ -70,7 +70,9 @@ export const Navbar = (props) => {
             <div
                 className="home">
 
-                <div className="home-content">
+                <div
+
+                    className="home-content">
                     <div className="heading-home">
                         <div className='miniheading'>
                             <h2 >
@@ -93,7 +95,7 @@ export const Navbar = (props) => {
                             <i className="fa-brands fa-instagram" onClick={oninsta}></i>
                             <i className="fa-brands fa-linkedin" onClick={onlinkdin}></i>
                         </div>
-                      
+
                     </div>
                 </div>
             </div>

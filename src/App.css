@@ -636,7 +636,7 @@ video {
 }
 
 .sectionheading h1 {
-  margin-left: 10px;
+  margin-left: 2px;
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -645,26 +645,76 @@ video {
 
 .rowgap {
   margin-top: 5%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+.rowgap .f {
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.rowgap div {
-  background-color: rgb(39, 37, 34);
-  padding: 6px 20px;
-  border-radius: 7px;
-  margin: 5px;
+.f div {
+  background-color: #151515;
   color: white;
+  padding: 6px 10px;
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: var(--font3);
-  letter-spacing: normal;
+  font-family: var(--font2);
+  margin: 2px;
+  margin-top: 4px;
+  border-radius: 5px;
 }
 
-.rowgap div:hover {
+.f div:hover {
   transition: .4s ease-in-out;
   transform: scale(1.1);
 }
+
+.b div:hover {
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.rowgap .b {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.b div {
+  background-color: #151515;
+  color: white;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  font-family: var(--font2);
+  margin: 2px;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+
+.backendhead {
+  margin-top: 5%;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  font-family: var(--font6);
+  font-weight: bold;
+}
+
+.frontendhead {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  font-family: var(--font6);
+  font-weight: bold;
+}
+
+/* .rowgap div:hover {
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
+} */
 
 .skills_row {
   display: grid;
@@ -703,25 +753,36 @@ video {
 
 /* Making Responsiveness  */
 @media screen and (max-width:1160px) {
-  .skills_section{
+  .skills_section {
     margin-top: 12%;
   }
+
   .skills_row {
     display: flex;
     flex-direction: column;
   }
-  .sectionheading h1{
+
+
+  .sectionheading h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
   }
-  .rowgap{
+  .frontendhead{
+    font-size: 15px;
+  }
+  .backendhead{
+    font-size: 15px;
+  }
+
+  .rowgap {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     width: 100%;
   }
-  .rowgap div{
-    font-size: 14px;
+
+  .rowgap div {
+    font-size: 12px;
   }
 
   .nav-title {
