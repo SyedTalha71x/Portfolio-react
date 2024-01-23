@@ -9,6 +9,7 @@ import prj3 from '../images/prj3.png'
 import prj3edit from '../images/editprj1.png'
 import prj4 from '../images/prj4.png'
 import prj1editon from '../images/prj1editon.png'
+import prj5 from '../images/prj5.png'
 
 
 
@@ -119,6 +120,25 @@ export const Projects = (props) => {
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>FITNESS WEBSITE</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                                 A Fitness Website with User Authentication System.
+                            </p>
+                            <div>
+                                <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={prj5} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                        </div>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE WEBSITE</h3>
+                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
+                                A Modern e-commerce Website.
                             </p>
                             <div>
                                 <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
