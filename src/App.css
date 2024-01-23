@@ -406,7 +406,7 @@ video {
 }
 
 .projects__content {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .projects__row-content-title {
@@ -417,7 +417,7 @@ video {
 }
 
 .prjbtn {
-  padding: 7px 25px;
+  padding: 9px 30px;
   background-color: rgb(8, 8, 110);
   color: white;
   font-family: var(--font6);
@@ -696,6 +696,7 @@ video {
 
 .backendhead {
   margin-top: 5%;
+  margin-left: 2%;
   font-size: 20px;
   text-transform: uppercase;
   color: black;
@@ -704,6 +705,7 @@ video {
 }
 
 .frontendhead {
+  margin-left: 2%;
   font-size: 20px;
   text-transform: uppercase;
   color: black;
@@ -768,10 +770,12 @@ video {
     font-size: 18px;
     width: 100%;
   }
-  .frontendhead{
+
+  .frontendhead {
     font-size: 15px;
   }
-  .backendhead{
+
+  .backendhead {
     font-size: 15px;
   }
 

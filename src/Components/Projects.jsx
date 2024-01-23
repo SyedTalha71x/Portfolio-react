@@ -83,7 +83,7 @@ export const Projects = (props) => {
                                 A Notebook Application where you can manage all your notes on cloud.
                             </p>
                             <div>
-                                <button type="button"  class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button type="button"  className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     More Info
                                 </button>
                             </div>
@@ -99,10 +99,10 @@ export const Projects = (props) => {
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>PORTFOLIO</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Portfolio Website for Business Usage and others.
+                                A Modern Portfolio Website
                             </p>
                             <div>
-                                <button onClick={onPrj1} type="button" class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj1} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
@@ -116,12 +116,12 @@ export const Projects = (props) => {
                             <img src={prj4} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>FITNESS/HEALTH PORTAL</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>FITNESS WEBSITE</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A full fleged Fitness/Health portal with many recommendations.
+                                A Fitness Website with User Authentication System.
                             </p>
                             <div>
-                                <button onClick={onPrj2} type="button" class="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
