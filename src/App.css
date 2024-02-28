@@ -106,19 +106,18 @@ html {
   border: none;
   color: white;
   background-color: transparent;
-  border: 1px solid rgb(106, 106, 190);
   font-family: var(--font6);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
+  box-shadow: inset 0 0 0 rgb(35, 26, 64);
 }
 
 .hirebtn:hover {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  transition: .4s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: inset 140px 0 0 rgb(93, 56, 241);
+  color: white;
 }
 
 /* Main Home Page css  */
@@ -155,7 +154,7 @@ video {
   left: 0;
   height: 90vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .main-icons i {
@@ -164,6 +163,10 @@ video {
   margin-top: 1.3rem;
 }
 
+.typedtext {
+  font-weight: bolder;
+  color: yellow;
+}
 
 /* About Us Page css  */
 .container {
@@ -210,6 +213,13 @@ video {
   font-family: var(--font1);
 }
 
+.typed {
+  font-size: 18px;
+  color: red;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
 .aboutbtn {
   padding: 7px 25px;
   background-color: rgb(24, 24, 93);
@@ -220,6 +230,8 @@ video {
   text-align: center;
   border: none;
   font-size: 14px;
+  transition: ease-in-out 0.4s;
+  animation: glow 2s infinite;
 }
 
 .aboutbtn:hover {
@@ -416,6 +428,29 @@ video {
 
 }
 
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 0 rgba(91, 91, 199, 0.5);
+
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(84, 84, 128, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 5px 0 rgba(73, 73, 133, 0.5);
+
+  }
+}
+
+.imageabout {
+  transition: ease-in-out 0.4s;
+
+  animation: glow 2s infinite;
+}
+
 .prjbtn {
   padding: 9px 30px;
   background-color: rgb(8, 8, 110);
@@ -426,6 +461,9 @@ video {
   font-weight: 600;
   text-align: center;
   border: none;
+  transition: ease-in-out 0.4s;
+  color: white;
+  animation: glow 2s infinite;
 
 }
 

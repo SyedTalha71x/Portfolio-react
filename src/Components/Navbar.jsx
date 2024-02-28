@@ -1,10 +1,15 @@
 import React, { useEffect, useRef } from 'react'
 import video1 from '../assets/bgvideo.mp4'
 import video2 from '../assets/bgvideo2.mp4'
+import video3 from '../assets/bgvideo3.mp4'
+import video4 from '../assets/bgvideo4.mp4'
 import { motion, useInView, useAnimation } from "framer-motion"
 import { BsBrowserFirefox } from "react-icons/bs";
+import TypedText from './Typed'
 
 export const Navbar = (props) => {
+    const strings = ["Next.js Developer", "Mern Stack Developer", "UI/UX Developer"];
+
 
     const ref = useRef(null);
 
@@ -34,7 +39,7 @@ export const Navbar = (props) => {
     const { title } = props;
     return (
         <>
-            <video src={video2} autoPlay loop muted></video>
+            <video src={video3} autoPlay loop muted></video>
             <div className="overlay"></div>
             <nav className="nav navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container-fluid">
@@ -81,8 +86,11 @@ export const Navbar = (props) => {
                         </div>
                         <div>
 
-                            <h2 className='secheading'> A PROFESSIONAL WEB DEVELOPER</h2>
+                            <h2 className='secheading'> WELCOME TO MY WEBSITE</h2>
                         </div>
+                        <span className='typed'>
+                            <TypedText strings={strings} />
+                        </span>
                         <p>I am a passionate Web Developer in the Software industry. Just hire me one time!</p>
                         <div className="hireme">
                             <a href="./#contact">

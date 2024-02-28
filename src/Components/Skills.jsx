@@ -36,10 +36,7 @@ const Skills = (props) => {
                             <h1 style={{ color: props.mode === 'light' ? '' : 'white' }}>expert in following things</h1>
                             <div className="rowgap">
                                 <div className="frontend">
-                                    <div className="frontendhead" style={{ color: props.mode === 'light' ? '' : 'white' }} >
-                                        Frontend
-                                    </div>
-                                    <div className='f'>
+                                    <div className='f text-center'>
                                         <div>Html</div>
                                         <div>Css</div>
                                         <div>Javascript</div>
@@ -49,10 +46,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="backend" >
-                                    <div className="backendhead" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                        Backend
-                                    </div>
-                                    <div className='b'>
+                                    <div className='b text-center'>
 
                                         <div>Node.js</div>
                                         <div>MongoDB</div>

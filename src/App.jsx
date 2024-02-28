@@ -35,7 +35,7 @@ function App() {
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />
       <About mode={mode} />
       <Services mode={mode} />
-      <Skills mode={mode} />
+      {/* <Skills mode={mode} /> */}
       <Projects mode={mode} />
       <Contact mode={mode} />
       <Footer mode={mode} />

@@ -36,7 +36,7 @@ export const About = (props) => {
                 className="main-about-page">
                 <div className="about-content">
                     <div className="left-about">
-                        <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img className='imageabout' src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                     </div>
                     <div className="right-about">
                         <h4 style={{ color: props.mode === 'light' ? 'navy' : 'white' }}>About Me</h4>
