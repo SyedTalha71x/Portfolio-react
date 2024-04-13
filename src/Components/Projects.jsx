@@ -1,16 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
-import project1edit from '../images/prj1edit.png'
-import project2edit from '../images/prj2edit.png'
-import prj1 from '../images/prj1.png'
-import prjedit from '../images/prj2x.png'
-import prj3 from '../images/prj3.png'
-import prj3edit from '../images/editprj1.png'
-import prj4 from '../images/prj4.png'
 import prj1editon from '../images/prj1editon.png'
 import prj5 from '../images/prj5.png'
 import prj from '../images/prj4.png'
 import prj2 from '../images/prj2.png'
+import newss from '../images/newss.png'
 
 
 
@@ -34,7 +28,7 @@ export const Projects = (props) => {
     }
 
     const onPrj2 = () => {
-        // window.location.href = "https://www.syedtalhahussain.com/";
+        window.location.href = "https://beyoung-wine.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -134,12 +128,12 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj5} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={newss} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE WEBSITE</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Modern e-commerce Website.
+                                Beyoung Ecommerce Store
                             </p>
                             <div>
                                 <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -150,7 +144,7 @@ export const Projects = (props) => {
                     </div>
                 </div>
 
-                <div className="projects__content">
+                {/* <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
                             <img src={prj} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
@@ -167,7 +161,7 @@ export const Projects = (props) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </motion.div>
         </section>
     )
