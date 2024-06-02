@@ -5,6 +5,7 @@ import prj5 from '../images/prj5.png'
 import prj from '../images/prj4.png'
 import prj2 from '../images/prj2.png'
 import newss from '../images/newss.png'
+import prj7 from '../images/prj7.png'
 
 
 
@@ -29,6 +30,9 @@ export const Projects = (props) => {
 
     const onPrj2 = () => {
         window.location.href = "https://beyoung-wine.vercel.app/";
+    }
+    const onPrj3 = () => {
+        window.location.href = "https://creativeagency-lemon.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -137,6 +141,25 @@ export const Projects = (props) => {
                             </p>
                             <div>
                                 <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={prj7} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                        </div>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>CREATIVE AGENCY</h3>
+                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
+                                Creative Agency is a modern bloodline agency
+                            </p>
+                            <div>
+                                <button onClick={onPrj3} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
