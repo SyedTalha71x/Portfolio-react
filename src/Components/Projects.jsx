@@ -1,28 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import prj1editon from '../images/prj1editon.png'
-import prj5 from '../images/prj5.png'
-import prj from '../images/prj4.png'
 import prj2 from '../images/prj2.png'
-import newss from '../images/newss.png'
-import prj7 from '../images/prj7.png'
-
-
+import TalenScout from '../images/talentscout.png'
+import bloodline from '../images/bloodline.png'
+import dashboard from '../images/dashboard.png'
 
 
 export const Projects = (props) => {
-
-    // const [showModal1, setShowModal1] = useState(false);
-
-    // const handleOnClose = () => {
-    //     setShowModal1(false);
-    // }
-
-    // const [showModal2, setShowModal2] = useState(false);
-
-    // const handleOnClose1 = () => {
-    //     setShowModal2(false);
-    // }
 
     const onPrj1 = () => {
         window.location.href = "https://www.syedtalhahussain.com/";
@@ -32,7 +17,7 @@ export const Projects = (props) => {
         window.location.href = "https://beyoung-wine.vercel.app/";
     }
     const onPrj3 = () => {
-        window.location.href = "https://creativeagency-lemon.vercel.app/";
+        window.location.href = "https://bloodline-iota.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -94,12 +79,12 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj1editon} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={dashboard} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>PORTFOLIO</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE DASHBOARD</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Modern Portfolio Website
+                                A modern E-commerce Dashboard.
                             </p>
                             <div>
                                 <button onClick={onPrj1} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -132,12 +117,12 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={newss} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={TalenScout} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE WEBSITE</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>TALENT SCOUT</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                Beyoung Ecommerce Store
+                                A modern JobFinder area where people gets their dream job.
                             </p>
                             <div>
                                 <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -151,7 +136,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj7} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={bloodline} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>CREATIVE AGENCY</h3>
