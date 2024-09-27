@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import { MdManageAccounts } from "react-icons/md";
@@ -31,15 +33,15 @@ export const Services = (props) => {
             }}
 
             className='mainservicecontainer' ref={ref}>
-            <div className="servicesection">
-                <h1>Why people choose Me?</h1>
-                <p>My services are always outstanding as i always focus on my clients for proviging them the best things</p>
+            <div className="">
+                <h1 className='lg:text-4xl md:text-4xl sm:text-3xl text-3xl font-bold text-white uppercase '>Why people choose Me?</h1>
+                <p className='mt-2 text-gray-400 font-semibold'>My services are always outstanding as i always focus on my clients for proviging them the best things</p>
             </div>
 
             <div className="service_row">
                 <div className="one_row">
                     <div>
-                        <i class="fa-solid fa-laptop-file icons" ></i>
+                        <i className="fa-solid fa-laptop-file icons" ></i>
                     </div>
                     <div className="semiserviceheading">Web Development</div>
                     <p>I will provide you the best Quality Websites interfaces.</p>
@@ -53,14 +55,14 @@ export const Services = (props) => {
                 </div>
                 <div className="three_row">
                     <div>
-                        <i class="fa-solid fa-user-pen icons" ></i>
+                        <i className="fa-solid fa-user-pen icons" ></i>
                     </div>
                     <div className="semiserviceheading">Support 24/24</div>
                     <p>I will be always their for my clients when they need any help.</p>
                 </div>
                 <div className="four_row">
                     <div>
-                        <MdManageAccounts className='icons manage_icon' />
+                        <MdManageAccounts className='icons manage_icon ' />
                     </div>
                     <div className="semiserviceheading">Responsive Designs</div>
                     <p>I will provide you the complete Responsive Designs Website which can be applicable to access in any device.</p>

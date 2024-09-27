@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
-import aboutpic from '../images/about.jpg'
-import aboutpic2 from '../images/about2.jpg'
 
 
 export const About = (props) => {
@@ -19,6 +20,7 @@ export const About = (props) => {
         if (useinview) {
             maincontrols.start("visible");
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [useinview]);
 
     return (
@@ -49,7 +51,7 @@ export const About = (props) => {
                             </div>
                         </p>
                         <span className='linkden-id'>
-                            <button type="button" className="aboutbtn" onClick={onlinkdin} style={{ backgroundColor: props.mode === 'light' ? '' : 'white', color: props.mode === 'light' ? '' : 'black', fontWeight: props.mode === 'light' ? '' : '600' }}>Know Me</button>
+                            <button type="button" className="bg-purple-600 text-white py-2 px-10 rounded-md transition-transform hover:-translate-y-3 duration-700 mt-3" onClick={onlinkdin} style={{ backgroundColor: props.mode === 'light' ? '' : 'white', color: props.mode === 'light' ? '' : 'black', fontWeight: props.mode === 'light' ? '' : '600' }}>Know Me</button>
                         </span>
                     </div>
 

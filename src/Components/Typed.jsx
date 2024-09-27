@@ -1,24 +1,35 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useEffect, useRef } from 'react';
-import typo from 'typed.js';
+import Typed from 'typed.js'; // Ensure you're importing the right package
 
-const Typed = ({ strings }) => {
-    const typedTextRef = useRef(null);
+const TypedComponent = ({ strings = [] }) => {
+  const typedTextRef = useRef(null);
 
-    useEffect(() => {
-        const options = {
-            strings,
-            typeSpeed: 55,
-            backSpeed: 55,
-            loop: true
-        };
+  useEffect(() => {
+    // Ensure the strings prop is a valid array
+    if (!Array.isArray(strings) || strings.length === 0) {
+      console.error("The 'strings' prop should be an array with at least one string.");
+      return;
+    }
 
-        const typed = new typo(typedTextRef.current, options);
+    const options = {
+      strings,
+      typeSpeed: 55,
+      backSpeed: 55,
+      loop: true,
+    };
 
-        return () => {
-            typed.destroy();
-        };
-    }, [strings]);
+    // Initialize the Typed instance
+    const typed = new Typed(typedTextRef.current, options);
 
-    return <span className="typedtext " ref={typedTextRef} />;
-}
-export default Typed
+    // Clean up the Typed instance on component unmount
+    return () => {
+      typed.destroy();
+    };
+  }, [strings]);
+
+  return <span className="typed-text" ref={typedTextRef} />;
+};
+
+export default TypedComponent;

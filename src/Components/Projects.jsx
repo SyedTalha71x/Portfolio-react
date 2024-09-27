@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
-import prj1editon from '../images/prj1editon.png'
-import prj2 from '../images/prj2.png'
 import TalenScout from '../images/talentscout.png'
 import bloodline from '../images/bloodline.png'
 import dashboard from '../images/dashboard.png'
+import NextGenCareer from '../images/nextgen-career.png'
 
 
 export const Projects = (props) => {
@@ -56,25 +58,6 @@ export const Projects = (props) => {
                 </h2>
                 <div className="row my-4" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                 </div>
-                {/* 
-                <div className="projects__content">
-                    <div className="projects__row" >
-                        <div className="projects__row-img-cont" >
-                            <img src={prj1} className="projects__row-img" loading="lazy" />
-                        </div>
-                        <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>Notebook-App</h3>
-                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Notebook Application where you can manage all your notes on cloud.
-                            </p>
-                            <div>
-                                <button type="button"  className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    More Info
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
 
                 <div className="projects__content">
                     <div className="projects__row">
@@ -87,7 +70,7 @@ export const Projects = (props) => {
                                 A modern E-commerce Dashboard.
                             </p>
                             <div>
-                                <button onClick={onPrj1} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj1} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
@@ -98,15 +81,15 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={prj2} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={NextGenCareer} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>FITNESS WEBSITE</h3>
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>NEXTGEN-CAREER</h3>
                             <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Fitness Website with User Authentication System.
+                                A platform where for future creations
                             </p>
                             <div>
-                                <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj2} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
@@ -125,7 +108,7 @@ export const Projects = (props) => {
                                 A modern JobFinder area where people gets their dream job.
                             </p>
                             <div>
-                                <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj2} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
@@ -144,7 +127,7 @@ export const Projects = (props) => {
                                 Creative Agency is a modern bloodline agency
                             </p>
                             <div>
-                                <button onClick={onPrj3} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj3} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
