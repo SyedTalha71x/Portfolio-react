@@ -33,12 +33,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "javascript:void(0)", active: true },
-    { name: "Team", href: "javascript:void(0)" },
-    { name: "Feature", href: "javascript:void(0)" },
-    { name: "Blog", href: "javascript:void(0)" },
-    { name: "About", href: "javascript:void(0)" },
-    { name: "Contact", href: "javascript:void(0)" },
+    { name: "Home", href: "/", active: true },
+    { name: "Projects", href: "/" },
+    { name: "Services", href: "/" },
+    { name: "Social", href: "/" },
+    { name: "Me", href: "/" },
   ];
 
   return (

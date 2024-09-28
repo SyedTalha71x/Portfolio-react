@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import { About } from './Components/About'
-import { Services } from './Components/Services'
 import { Projects } from './Components/Projects'
 import { Contact } from './Components/Contact'
 
@@ -28,7 +27,6 @@ function App() {
 
       <Navbar title="Syed Talha Hussain" mode={mode} togglemode={togglemode} />
       <About mode={mode} />
-      <Services mode={mode} />
       <Projects mode={mode} />
       <Contact mode={mode} />
     </>

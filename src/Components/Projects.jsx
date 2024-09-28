@@ -62,7 +62,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={dashboard} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={dashboard} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE DASHBOARD</h3>
@@ -81,7 +81,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={NextGenCareer} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={NextGenCareer} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>NEXTGEN-CAREER</h3>
@@ -100,7 +100,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={TalenScout} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={TalenScout} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>TALENT SCOUT</h3>
@@ -119,7 +119,7 @@ export const Projects = (props) => {
                 <div className="projects__content">
                     <div className="projects__row">
                         <div className="projects__row-img-cont">
-                            <img src={bloodline} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                            <img src={bloodline} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
                         </div>
                         <div className="projects__row-content">
                             <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>CREATIVE AGENCY</h3>
@@ -134,25 +134,6 @@ export const Projects = (props) => {
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="projects__content">
-                    <div className="projects__row">
-                        <div className="projects__row-img-cont">
-                            <img src={prj} className="projects__row-img" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
-                        </div>
-                        <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>BLOG STACK</h3>
-                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A Full Stack Blog App
-                            </p>
-                            <div>
-                                <button onClick={onPrj2} type="button" className="prjbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Check Live
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </motion.div>
         </section>
     )
