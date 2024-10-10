@@ -6,20 +6,16 @@ import { motion, useInView, useAnimation } from "framer-motion"
 import TalenScout from '../images/talentscout.png'
 import bloodline from '../images/bloodline.png'
 import dashboard from '../images/dashboard.png'
-import NextGenCareer from '../images/nextgen-career.png'
+import NextGenCareer from '../images/nextcareer.png'
 
 
 export const Projects = (props) => {
 
-    const onPrj1 = () => {
-        window.location.href = "https://www.syedtalhahussain.com/";
-    }
-
     const onPrj2 = () => {
-        window.location.href = "https://beyoung-wine.vercel.app/";
+        window.location.href = "https://nextgen-career.vercel.app/login";
     }
-    const onPrj3 = () => {
-        window.location.href = "https://bloodline-iota.vercel.app/";
+    const onPrj4 = () => {
+        window.location.href = "https://creative-bloodline.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -70,8 +66,8 @@ export const Projects = (props) => {
                                 A modern E-commerce Dashboard.
                             </p>
                             <div>
-                                <button onClick={onPrj1} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Check Live
+                                <button type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Not Deployed
                                 </button>
                             </div>
                         </div>
@@ -108,8 +104,8 @@ export const Projects = (props) => {
                                 A modern JobFinder area where people gets their dream job.
                             </p>
                             <div>
-                                <button onClick={onPrj2} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Check Live
+                                <button  type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                   Not Deployed
                                 </button>
                             </div>
                         </div>
@@ -127,7 +123,7 @@ export const Projects = (props) => {
                                 Creative Agency is a modern bloodline agency
                             </p>
                             <div>
-                                <button onClick={onPrj3} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button onClick={onPrj4} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
