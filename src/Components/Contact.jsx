@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub, FaDev } from 'react-i
 
 export const Contact = () => {
   return (
-    <footer className="bg-gray-900 py-6 px-10 font-sans tracking-wide">
+    <footer className="bg-gray-900 py-6 px-10 font-sans tracking-wide" id='social'>
       <div className="flex items-center justify-between max-sm:flex-col gap-5">
         <p className="text-md font-semibold text-gray-400 flex items-center">
           Follow Me <span className="text-2xl ml-2">😊</span>

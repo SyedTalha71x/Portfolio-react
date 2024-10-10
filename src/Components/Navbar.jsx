@@ -34,10 +34,10 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", href: "/", active: true },
-    { name: "Projects", href: "/" },
+    { name: "Projects", href: "/#projects" },
     { name: "Services", href: "/" },
-    { name: "Social", href: "/" },
-    { name: "Me", href: "/" },
+    { name: "Social", href: "/#social" },
+    { name: "Me", href: "/#about" },
   ];
 
   return (
