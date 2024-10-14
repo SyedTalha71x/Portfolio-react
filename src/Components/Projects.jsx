@@ -7,6 +7,7 @@ import TalenScout from '../images/talentscout.png'
 import bloodline from '../images/bloodline.png'
 import dashboard from '../images/dashboard.png'
 import NextGenCareer from '../images/nextcareer.png'
+import Ecommerce from '../images/ecommerce.png'
 
 
 export const Projects = (props) => {
@@ -16,6 +17,9 @@ export const Projects = (props) => {
     }
     const onPrj4 = () => {
         window.location.href = "https://creative-bloodline.vercel.app/";
+    }
+    const onPrj5 = () => {
+        window.location.href = "https://beyond-seven.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -124,6 +128,25 @@ export const Projects = (props) => {
                             </p>
                             <div>
                                 <button onClick={onPrj4} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={Ecommerce} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                        </div>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>BEYOND</h3>
+                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
+                              Beyond is a modern ecommerce store
+                            </p>
+                            <div>
+                                <button onClick={onPrj5} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
