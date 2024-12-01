@@ -5,10 +5,9 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import TalenScout from '../images/talentscout.png'
 import bloodline from '../images/bloodline.png'
-import dashboard from '../images/dashboard.png'
 import NextGenCareer from '../images/nextcareer.png'
 import Ecommerce from '../images/ecommerce.png'
-
+import skillhub from '../images/skillhub.png'
 
 export const Projects = (props) => {
 
@@ -20,6 +19,10 @@ export const Projects = (props) => {
     }
     const onPrj5 = () => {
         window.location.href = "https://beyond-seven.vercel.app/";
+    }
+
+    const onPrj1 = () =>{
+        window.location.href = "https://skillhub-woad.vercel.app/";
     }
 
     const ref = useRef(null);
@@ -59,24 +62,7 @@ export const Projects = (props) => {
                 <div className="row my-4" style={{ color: props.mode === 'light' ? '' : 'white' }}>
                 </div>
 
-                <div className="projects__content">
-                    <div className="projects__row">
-                        <div className="projects__row-img-cont">
-                            <img src={dashboard} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
-                        </div>
-                        <div className="projects__row-content">
-                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>E-COMMERCE DASHBOARD</h3>
-                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
-                                A modern E-commerce Dashboard.
-                            </p>
-                            <div>
-                                <button type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Not Deployed
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
 
                 <div className="projects__content">
                     <div className="projects__row">
@@ -147,6 +133,25 @@ export const Projects = (props) => {
                             </p>
                             <div>
                                 <button onClick={onPrj5} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Check Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="projects__content">
+                    <div className="projects__row">
+                        <div className="projects__row-img-cont">
+                            <img src={skillhub} className="projects__row-img  rounded-xl" loading="lazy" style={{ boxShadow: props.mode === 'light' ? '' : '2px 2px 10px navy' }} />
+                        </div>
+                        <div className="projects__row-content">
+                            <h3 className="projects__row-content-title" style={{ color: props.mode === 'light' ? '' : 'white' }}>SKILLHUB</h3>
+                            <p className="projects__row-content-desc" style={{ color: props.mode === 'light' ? '' : 'white' }}>
+                                A skill learning platform.
+                            </p>
+                            <div>
+                                <button onClick={onPrj1} type="button" className="prjbtn mt-3 rounded-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Check Live
                                 </button>
                             </div>
